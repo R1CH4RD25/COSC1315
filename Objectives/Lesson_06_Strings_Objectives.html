@@ -1,0 +1,103 @@
+<h1>Lesson 06 &mdash; Strings</h1>
+<p>&nbsp;</p>
+<h2>Learning Objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+
+<p><strong>Create and manipulate string literals</strong></p>
+<ul>
+    <li><p>Define strings using single quotes <code>'text'</code> or double quotes <code>"text"</code>.</p></li>
+    <li><p>Use triple quotes (<code>'''</code> or <code>"""</code>) for multi-line strings.</p></li>
+    <li><p>Choose appropriate quote types to include apostrophes or quotes within strings.</p></li>
+</ul>
+
+<p><strong>Access individual characters with indexing</strong></p>
+<ul>
+    <li><p>Use bracket notation <code>[]</code> to access characters by position (e.g., <code>name[0]</code> gets the first character).</p></li>
+    <li><p>Understand that indexing starts at <code>0</code> (first character is at index <code>0</code>).</p></li>
+    <li><p>Use negative indices to count from the end (e.g., <code>name[-1]</code> is the last character).</p></li>
+</ul>
+
+<p><strong>Extract substrings using slicing</strong></p>
+<ul>
+    <li><p>Use slice notation <code>[start:end]</code> to extract portions of a string.</p></li>
+    <li><p>Understand that <code>end</code> is exclusive (not included in the result).</p></li>
+    <li><p>Omit <code>start</code> to slice from the beginning (e.g., <code>[:5]</code> gets first 5 characters).</p></li>
+    <li><p>Omit <code>end</code> to slice to the end (e.g., <code>[2:]</code> gets from index 2 to the end).</p></li>
+</ul>
+
+<p><strong>Use string methods for manipulation</strong></p>
+<ul>
+    <li><p>Convert strings to uppercase with <code>.upper()</code> and lowercase with <code>.lower()</code>.</p></li>
+    <li><p>Find substrings using <code>.find()</code> (returns index or -1 if not found).</p></li>
+    <li><p>Replace text using <code>.replace(old, new)</code> to create modified copies.</p></li>
+    <li><p>Check if a substring exists using the <code>in</code> operator (returns <code>True</code> or <code>False</code>).</p></li>
+</ul>
+
+<p><strong>Format strings for output</strong></p>
+<ul>
+    <li><p>Use formatted string literals (f-strings) with <code>f"text {variable} more text"</code>.</p></li>
+    <li><p>Embed variables and expressions directly in strings using <code>{variable}</code>.</p></li>
+    <li><p>Understand that f-strings are cleaner and more readable than string concatenation.</p></li>
+</ul>
+
+<p><strong>Recognize common pitfalls</strong></p>
+<ul>
+    <li><p>Remember that strings are <strong>immutable</strong>; methods return new strings, they don&rsquo;t modify the original.</p></li>
+    <li><p>Avoid off-by-one errors with indexing (first character is <code>[0]</code>, not <code>[1]</code>).</p></li>
+    <li><p>Remember that slice <code>[start:end]</code> excludes the character at <code>end</code> index.</p></li>
+    <li><p>Understand that accessing an invalid index causes an <strong>IndexError</strong>.</p></li>
+</ul>
+
+<hr />
+
+<h2>Assignment Instructions</h2>
+<p>For this activity, you will:</p>
+<ul>
+    <li><p>Click the <strong>Google Colab link</strong> in Canvas to open the Lesson 06 notebook.</p></li>
+    <li><p>In Colab, go to <strong>File &rarr; Save a copy in Drive</strong> to create your own editable version.</p></li>
+    <li><p>Run the <strong>Setup Cell</strong> first to download the verification system from GitHub.</p></li>
+    <li>
+        <p>Complete the <strong>Walk-Along Tasks</strong> (3 tasks, 15 points):</p>
+        <ul>
+            <li><p>Follow along with the Code with Mosh video and type the code yourself.</p></li>
+            <li><p>Practice string methods like <code>.upper()</code>, <code>.lower()</code>, and <code>.find()</code>.</p></li>
+            <li><p>Use indexing and slicing to access characters and substrings.</p></li>
+        </ul>
+    </li>
+    <li>
+        <p>Complete the <strong>Try It Yourself</strong> tasks (3 tasks, 45 points):</p>
+        <ul>
+            <li><p>Create a player name formatter that converts names to uppercase for jersey display.</p></li>
+            <li><p>Build a team chant generator that extracts and repeats parts of a team name.</p></li>
+            <li><p>Write a stats display program using f-strings to show player information.</p></li>
+        </ul>
+    </li>
+    <li>
+        <p>Complete the <strong>Debug the Bug</strong> tasks (3 tasks, 40 points):</p>
+        <ul>
+            <li><p>Fix code with incorrect string indexing (off-by-one errors).</p></li>
+            <li><p>Debug slicing syntax that produces unexpected results.</p></li>
+            <li><p>Correct code that tries to modify immutable strings.</p></li>
+        </ul>
+    </li>
+    <li><p>Run the <strong>calculate_grade()</strong> cell at the end to see your total score.</p></li>
+    <li><p>Take a screenshot showing your grade (must show 70 points or higher).</p></li>
+    <li><p>Submit the screenshot through <strong>Canvas</strong> (the assignment submission page).</p></li>
+    <li><p>Complete the <strong>Vocabulary Quiz</strong> and <strong>Assignment Quiz</strong> in Canvas (10 points each).</p></li>
+</ul>
+
+<hr />
+
+<h2>Key Terms</h2>
+<ul>
+    <li><p><strong>String</strong> &mdash; A sequence of characters enclosed in quotes (e.g., <code>"Hello"</code> or <code>'World'</code>).</p></li>
+    <li><p><strong>Indexing</strong> &mdash; Accessing individual characters in a string using <code>[position]</code> notation.</p></li>
+    <li><p><strong>Zero-Based Indexing</strong> &mdash; The practice of counting positions starting from <code>0</code>; the first character is at index <code>0</code>.</p></li>
+    <li><p><strong>Negative Index</strong> &mdash; A position counted from the end of a string (e.g., <code>-1</code> is the last character).</p></li>
+    <li><p><strong>Slicing</strong> &mdash; Extracting a substring using <code>[start:end]</code> notation, where <code>end</code> is exclusive.</p></li>
+    <li><p><strong>String Method</strong> &mdash; A function that belongs to string objects (e.g., <code>.upper()</code>, <code>.find()</code>, <code>.replace()</code>).</p></li>
+    <li><p><strong>f-string</strong> &mdash; A formatted string literal prefixed with <code>f</code> that allows embedded expressions using <code>{}</code>.</p></li>
+    <li><p><strong>Immutable</strong> &mdash; Cannot be changed after creation; string methods return new strings rather than modifying the original.</p></li>
+    <li><p><strong>Substring</strong> &mdash; A portion or slice of a larger string (e.g., <code>"Pyt"</code> is a substring of <code>"Python"</code>).</p></li>
+    <li><p><strong>IndexError</strong> &mdash; An exception raised when attempting to access an invalid string index (e.g., <code>name[100]</code> when the string has 5 characters).</p></li>
+</ul>
