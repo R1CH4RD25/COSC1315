@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 08: Arithmetic Operations - Learning Objectives</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 20px;
+        }
+        .objective {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+        }
+        .objective strong {
+            color: #2c3e50;
+        }
+        .objective ul {
+            margin-top: 8px;
+        }
+        .key-term {
+            background-color: #e8f8f5;
+            padding: 12px;
+            margin: 8px 0;
+            border-left: 4px solid #16a085;
+            border-radius: 5px;
+        }
+        .term-name {
+            font-weight: bold;
+            color: #16a085;
+            font-size: 1.05em;
+        }
+        .term-definition {
+            margin-top: 5px;
+            color: #2c3e50;
+        }
+        .assignment-section {
+            background-color: #fff9e6;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            border: 2px solid #f39c12;
+        }
+        .assignment-section h2 {
+            color: #e67e22;
+            margin-top: 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+            font-size: 0.95em;
+        }
+        .sports-theme {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .metadata {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Lesson 08: Arithmetic Operations</h1>
+
+        <div class="metadata">
+            <strong>Course:</strong> COSC 1315 - Introduction to Computer Programming<br>
+            <strong>Video Timestamp:</strong> 48:32–58:16<br>
+            <strong>Week:</strong> Week 6<br>
+            <strong>Source:</strong> Code with Mosh - Python for Beginners
+        </div>
+
+        <div class="sports-theme">
+            <strong>🏈 Sports Theme:</strong> In this lesson, you'll calculate game statistics, player scores, and team averages using Python's arithmetic operators—just like a sports statistician analyzes performance data!
+        </div>
+
+        <h2>🎯 Learning Objectives</h2>
+
+        <div class="objective">
+            <strong>Perform basic arithmetic operations</strong>
+            <ul>
+                <li>Use the addition operator <code>+</code> to add numbers</li>
+                <li>Use the subtraction operator <code>-</code> to subtract numbers</li>
+                <li>Use the multiplication operator <code>*</code> to multiply numbers</li>
+                <li>Use the division operator <code>/</code> to divide numbers (always returns a float)</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>Use advanced arithmetic operators</strong>
+            <ul>
+                <li>Perform floor division using <code>//</code> to get an integer quotient</li>
+                <li>Calculate remainders using the modulus operator <code>%</code></li>
+                <li>Raise numbers to powers using the exponentiation operator <code>**</code></li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>Understand operator precedence</strong>
+            <ul>
+                <li>Recognize that exponentiation <code>**</code> has highest precedence</li>
+                <li>Know that multiplication, division, floor division, and modulus are evaluated next</li>
+                <li>Understand that addition and subtraction are evaluated last</li>
+                <li>Use parentheses <code>()</code> to override default precedence</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>Apply augmented assignment operators</strong>
+            <ul>
+                <li>Use <code>+=</code> to add and assign in one operation</li>
+                <li>Use <code>-=</code> to subtract and assign in one operation</li>
+                <li>Use <code>*=</code>, <code>/=</code>, and other augmented operators efficiently</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>Work with Python's math module</strong>
+            <ul>
+                <li>Import the <code>math</code> module to access advanced functions</li>
+                <li>Use <code>math.ceil()</code> to round up to the nearest integer</li>
+                <li>Use <code>math.floor()</code> to round down to the nearest integer</li>
+                <li>Apply built-in functions like <code>round()</code> and <code>abs()</code></li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>Write clear and readable expressions</strong>
+            <ul>
+                <li>Use parentheses to make complex expressions easier to understand</li>
+                <li>Avoid relying solely on precedence rules in complicated expressions</li>
+                <li>Test expressions to verify they produce expected results</li>
+            </ul>
+        </div>
+
+        <h2>📚 Key Terms</h2>
+
+        <div class="key-term">
+            <div class="term-name">Arithmetic Operator</div>
+            <div class="term-definition">A symbol that performs a mathematical operation on numbers (e.g., <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Operator Precedence</div>
+            <div class="term-definition">The rules determining the order in which operators are evaluated in an expression. Also known as the order of operations.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Floor Division (<code>//</code>)</div>
+            <div class="term-definition">Division that rounds down to the nearest integer, discarding any decimal portion (e.g., <code>10 // 3</code> equals <code>3</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Modulus (<code>%</code>)</div>
+            <div class="term-definition">An operator that returns the remainder after division (e.g., <code>10 % 3</code> equals <code>1</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Exponentiation (<code>**</code>)</div>
+            <div class="term-definition">An operator that raises a number to a power (e.g., <code>2 ** 3</code> equals <code>8</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Augmented Assignment</div>
+            <div class="term-definition">Operators like <code>+=</code> and <code>-=</code> that combine an arithmetic operation with variable assignment (e.g., <code>x += 5</code> is equivalent to <code>x = x + 5</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Parentheses</div>
+            <div class="term-definition">Symbols <code>()</code> used to group expressions and control the order of evaluation, overriding default precedence rules.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Math Module</div>
+            <div class="term-definition">A built-in Python library that provides advanced mathematical functions like <code>ceil()</code>, <code>floor()</code>, <code>sqrt()</code>, and trigonometric functions.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Binary Operator</div>
+            <div class="term-definition">An operator that works with two operands (e.g., <code>5 + 3</code>, where <code>+</code> is the binary operator).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">PEMDAS</div>
+            <div class="term-definition">A mnemonic for remembering order of operations: <strong>P</strong>arentheses, <strong>E</strong>xponents, <strong>M</strong>ultiplication/<strong>D</strong>ivision, <strong>A</strong>ddition/<strong>S</strong>ubtraction. In Python, exponentiation (<code>**</code>) is the exponent operation.</div>
+        </div>
+
+        <div class="assignment-section">
+            <h2>📝 Assignment Instructions</h2>
+
+            <h3>🏆 Complete the Lesson 08 Notebook</h3>
+            <p>Your assignment is to complete all tasks in the <strong>Lesson 08: Arithmetic Operations</strong> Google Colab notebook:</p>
+
+            <ol>
+                <li><strong>Walk-Along Tasks (10-15 points):</strong> Follow along with Mosh's video demonstrations
+                    <ul>
+                        <li>Practice basic arithmetic operations</li>
+                        <li>Use augmented assignment operators</li>
+                        <li>Explore operator precedence</li>
+                        <li>Work with math functions</li>
+                    </ul>
+                </li>
+
+                <li><strong>Try It Yourself (50 points):</strong> Apply concepts to sports scenarios
+                    <ul>
+                        <li>Calculate player statistics</li>
+                        <li>Compute team averages</li>
+                        <li>Determine game scores</li>
+                        <li>Use the math module for rounding</li>
+                    </ul>
+                </li>
+
+                <li><strong>Debug Challenges (40 points):</strong> Fix broken code
+                    <ul>
+                        <li>Identify operator precedence errors</li>
+                        <li>Correct division mistakes</li>
+                        <li>Fix augmented assignment bugs</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <div class="note">
+                <strong>⚠️ Important:</strong> Run the setup cell first to download the verification system! Each task will automatically check your code and provide instant feedback—just like a coach reviewing your performance stats!
+            </div>
+
+            <h3>🏈 Sports-Themed Examples</h3>
+            <p>In this lesson, you'll work with real-world sports calculations:</p>
+            <ul>
+                <li>Calculate a quarterback's passer rating</li>
+                <li>Determine batting averages and on-base percentages</li>
+                <li>Compute team points per game</li>
+                <li>Calculate shooting percentages</li>
+                <li>Determine playoff seeding scenarios</li>
+            </ul>
+
+            <h3>📊 Total Points: 100</h3>
+            <p>Complete all tasks and submit your Colab notebook link to Canvas before the deadline.</p>
+        </div>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> When in doubt about operator precedence, use parentheses! It's better to write <code>(5 + 3) * 2</code> than rely on memorizing precedence rules. Your code will be clearer and easier to debug!
+        </div>
+    </div>
+</body>
+</html>
