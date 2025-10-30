@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.pyc
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Google Drive files (can't be in Git)
+*.gdoc
+*.gsheet
+*.gslides
+
+# Large files
+*.mp4
+*.zip
+*.tar.gz
+
+# Temporary files
+*~
+*.swp
+*.bak
+*_TEMP.*
