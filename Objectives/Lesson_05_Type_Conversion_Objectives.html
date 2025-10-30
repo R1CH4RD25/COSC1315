@@ -1,0 +1,103 @@
+<h1>Lesson 05 &mdash; Type Conversion</h1>
+<p>&nbsp;</p>
+<h2>Learning Objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+
+<p><strong>Convert between data types using built-in functions</strong></p>
+<ul>
+    <li><p>Use <code>int()</code> to convert strings to integers (e.g., <code>int("20")</code> yields <code>20</code>).</p></li>
+    <li><p>Use <code>float()</code> to convert strings to floating-point numbers (e.g., <code>float("19.95")</code>).</p></li>
+    <li><p>Use <code>str()</code> to convert numbers to strings for concatenation or display.</p></li>
+    <li><p>Use <code>bool()</code> to convert values to boolean <code>True</code> or <code>False</code>.</p></li>
+</ul>
+
+<p><strong>Perform calculations with user input</strong></p>
+<ul>
+    <li><p>Convert input strings to numbers before performing arithmetic operations.</p></li>
+    <li><p>Add, subtract, multiply, or divide numeric values obtained from the user.</p></li>
+    <li><p>Store calculation results in variables for later use.</p></li>
+</ul>
+
+<p><strong>Understand type conversion necessity</strong></p>
+<ul>
+    <li><p>Explain why <code>input()</code> returns strings that must be converted for math.</p></li>
+    <li><p>Recognize that <code>"20" + "10"</code> concatenates strings (<code>"2010"</code>) rather than adding numbers.</p></li>
+    <li><p>Understand that <code>int("20") + int("10")</code> correctly evaluates to <code>30</code>.</p></li>
+</ul>
+
+<p><strong>Handle different numeric types</strong></p>
+<ul>
+    <li><p>Distinguish between integers (whole numbers) and floats (decimal numbers).</p></li>
+    <li><p>Choose <code>int()</code> for whole number conversions and <code>float()</code> for decimals.</p></li>
+    <li><p>Understand that <code>int()</code> truncates decimal portions (e.g., <code>int(3.9)</code> gives <code>3</code>).</p></li>
+</ul>
+
+<p><strong>Build interactive calculators</strong></p>
+<ul>
+    <li><p>Create programs that perform arithmetic on user-provided numbers.</p></li>
+    <li><p>Combine <code>input()</code> with type conversion functions for numerical calculations.</p></li>
+    <li><p>Display results using <code>print()</code> with properly formatted output.</p></li>
+</ul>
+
+<p><strong>Recognize common pitfalls</strong></p>
+<ul>
+    <li><p>Avoid trying to perform math directly on strings without conversion.</p></li>
+    <li><p>Remember that <code>int("3.5")</code> causes an error; use <code>float()</code> first then <code>int()</code> if needed.</p></li>
+    <li><p>Understand that invalid conversions (e.g., <code>int("hello")</code>) cause <strong>ValueError</strong> exceptions.</p></li>
+    <li><p>Don&rsquo;t forget to convert input strings before using them in calculations.</p></li>
+</ul>
+
+<hr />
+
+<h2>Assignment Instructions</h2>
+<p>For this activity, you will:</p>
+<ul>
+    <li><p>Click the <strong>Google Colab link</strong> in Canvas to open the Lesson 05 notebook.</p></li>
+    <li><p>In Colab, go to <strong>File &rarr; Save a copy in Drive</strong> to create your own editable version.</p></li>
+    <li><p>Run the <strong>Setup Cell</strong> first to download the verification system from GitHub.</p></li>
+    <li>
+        <p>Complete the <strong>Walk-Along Tasks</strong> (4 tasks, 20 points):</p>
+        <ul>
+            <li><p>Follow along with the Code with Mosh video and type the code yourself.</p></li>
+            <li><p>Ask for birth year and demonstrate the TypeError that occurs without conversion.</p></li>
+            <li><p>Fix the error using <code>int()</code> to convert the input string.</p></li>
+            <li><p>Use <code>type()</code> to check variable types and understand the difference.</p></li>
+        </ul>
+    </li>
+    <li>
+        <p>Complete the <strong>Try It Yourself</strong> tasks (3 tasks, 40 points):</p>
+        <ul>
+            <li><p>Build a weight converter that converts pounds to kilograms (multiply by 0.45).</p></li>
+            <li><p>Create a temperature converter from Fahrenheit to Celsius using the formula <code>(F - 32) * 5/9</code>.</p></li>
+            <li><p>Write a program that converts yards to meters (multiply by 0.9144).</p></li>
+        </ul>
+    </li>
+    <li>
+        <p>Complete the <strong>Debug the Bug</strong> tasks (3 tasks, 40 points):</p>
+        <ul>
+            <li><p>Find and fix code with missing type conversions.</p></li>
+            <li><p>Identify when <code>int()</code> should be <code>float()</code> for decimal results.</p></li>
+            <li><p>Debug code that calculates correctly but doesn&rsquo;t display output.</p></li>
+        </ul>
+    </li>
+    <li><p>Run the <strong>calculate_grade()</strong> cell at the end to see your total score.</p></li>
+    <li><p>Take a screenshot showing your grade (must show 70 points or higher).</p></li>
+    <li><p>Submit the screenshot through <strong>Canvas</strong> (the assignment submission page).</p></li>
+    <li><p>Complete the <strong>Vocabulary Quiz</strong> and <strong>Assignment Quiz</strong> in Canvas (10 points each).</p></li>
+</ul>
+
+<hr />
+
+<h2>Key Terms</h2>
+<ul>
+    <li><p><strong>Type Conversion</strong> &mdash; Changing data from one type to another (e.g., string to integer).</p></li>
+    <li><p><strong><code>int()</code> function</strong> &mdash; Converts a value to an integer; truncates decimals without rounding.</p></li>
+    <li><p><strong><code>float()</code> function</strong> &mdash; Converts a value to a floating-point number (decimal).</p></li>
+    <li><p><strong><code>str()</code> function</strong> &mdash; Converts a value to a string representation.</p></li>
+    <li><p><strong><code>type()</code> function</strong> &mdash; Returns the data type of a variable or value (e.g., <code>&lt;class 'int'&gt;</code>).</p></li>
+    <li><p><strong>Casting</strong> &mdash; Another term for type conversion; &ldquo;casting a string to an integer.&rdquo;</p></li>
+    <li><p><strong>ValueError</strong> &mdash; An exception raised when a conversion fails (e.g., <code>int("abc")</code>).</p></li>
+    <li><p><strong>TypeError</strong> &mdash; An error that occurs when trying to perform operations on incompatible data types (e.g., <code>2024 - "2000"</code>).</p></li>
+    <li><p><strong>Truncation</strong> &mdash; Removing the decimal portion of a number; <code>int(3.9)</code> truncates to <code>3</code>, not rounding to <code>4</code>.</p></li>
+    <li><p><strong>Arithmetic Operations</strong> &mdash; Mathematical calculations like addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>).</p></li>
+</ul>
