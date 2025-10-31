@@ -2,7 +2,23 @@
 
 **Purpose:** Step-by-step process for creating complete lesson packages for COSC 1315
 **Created:** October 30, 2025
-**Status:** Established after Lesson 5 completion
+**Updated:** October 31, 2025 - Added QTI 1.2 format requirements
+**Status:** Established and validated through Lesson 10
+
+---
+
+## ⚠️ CRITICAL REQUIREMENTS
+
+### Quiz Format
+**ALL quizzes MUST use full QTI 1.2 format** (`<questestinterop>` structure).
+- ❌ Simple `<quiz>` format does NOT auto-create quizzes in Canvas
+- ✅ Use `convert_quizzes_to_qti.py` script to convert simple format to QTI 1.2
+- ✅ Reference Lessons 05-10 quizzes for proper format examples
+
+### Point Values
+- Each quiz MUST total **100 points**
+- 10 questions × 10 points each = 100 points
+- Set `<fieldentry>10</fieldentry>` for `points_possible` in each question
 
 ---
 
@@ -10,14 +26,12 @@
 
 For each lesson, create **FOUR components** in this order:
 
-1. **Learning Objectives (HTML)** → Canvas assignment page
+1. **Learning Objectives (HTML)** → Canvas assignment page (no container divs!)
 2. **Lesson Notebook (Colab)** → Google Colab with GitHub integration
-3. **Vocabulary Quiz (QTI XML)** → Canvas quiz import
-4. **Assignment Quiz (QTI XML)** → Canvas quiz import
+3. **Vocabulary Quiz (QTI 1.2 XML)** → Canvas quiz import (use conversion script)
+4. **Assignment Quiz (QTI 1.2 XML)** → Canvas quiz import (use conversion script)
 
----
-
-## 🎯 STEP 1: Create Learning Objectives (HTML)
+---## 🎯 STEP 1: Create Learning Objectives (HTML)
 
 ### Purpose
 Canvas assignment page that students see before opening the Colab notebook. Provides clear expectations and vocabulary.
@@ -347,23 +361,44 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
 
 ### Requirements
 
+#### ⚠️ CRITICAL: Use Full QTI 1.2 Format
+**MUST use the complete QTI 1.2 format with `<questestinterop>` structure.**
+Simple `<quiz>` format does NOT auto-create quizzes in Canvas!
+
+See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for proper format.
+
 #### Quiz Format
 - **MUST total 100 points** when imported to Canvas
-- **10 questions = 10 points each** (Canvas auto-assigns equal points)
-- **Must include title attribute:** `<quiz title="Lesson XX - Topic Name Vocabulary Quiz">`
+- **10 questions = 10 points each** (set `points_possible` to 10 in each `<item>`)
+- **MUST use full QTI 1.2 structure** (see Required Structure below)
 
-#### Quiz Settings
+#### Required XML Structure
 ```xml
-<qtimetadata>
-    <qtimetadatafield>
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2
+                 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="lesson_XX_vocabulary_quiz" title="Lesson XX: Topic Name - Vocabulary Quiz">
+    <qtimetadata>
+      <qtimetadatafield>
         <fieldlabel>cc_maxattempts</fieldlabel>
         <fieldentry>3</fieldentry>
-    </qtimetadatafield>
-    <qtimetadatafield>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_weighting</fieldlabel>
+        <fieldentry>not_weighted</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
         <fieldlabel>qmd_timelimit</fieldlabel>
         <fieldentry>600</fieldentry>  <!-- 10 minutes -->
-    </qtimetadatafield>
-</qtimetadata>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <!-- Questions go here -->
+    </section>
+  </assessment>
+</questestinterop>
 ```
 
 #### Question Content
@@ -407,7 +442,7 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
             </qtimetadatafield>
             <qtimetadatafield>
                 <fieldlabel>points_possible</fieldlabel>
-                <fieldentry>1</fieldentry>
+                <fieldentry>10</fieldentry>  <!-- 10 points per question = 100 total -->
             </qtimetadatafield>
         </qtimetadata>
     </itemmetadata>
@@ -422,7 +457,21 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
                         <mattext texttype="text/plain">Answer choice A</mattext>
                     </material>
                 </response_label>
-                <!-- More options... -->
+                <response_label ident="b">
+                    <material>
+                        <mattext texttype="text/plain">Answer choice B</mattext>
+                    </material>
+                </response_label>
+                <response_label ident="c">
+                    <material>
+                        <mattext texttype="text/plain">Answer choice C</mattext>
+                    </material>
+                </response_label>
+                <response_label ident="d">
+                    <material>
+                        <mattext texttype="text/plain">Answer choice D</mattext>
+                    </material>
+                </response_label>
             </render_choice>
         </response_lid>
     </presentation>
@@ -440,6 +489,23 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
 </item>
 ```
 
+#### How to Create Quizzes
+**Option 1: Use the Conversion Script (Recommended)**
+1. Create quiz in simple format with `<quiz>`, `<question>`, `<answer fraction="100">` tags
+2. Run: `python convert_quizzes_to_qti.py` (modify script with your lesson details)
+3. Script converts to full QTI 1.2 format automatically
+
+**Option 2: Manual Creation**
+- Copy structure from `Lessons/Vocabulary Quizzes - QTI - Canvas/Lesson_05_Type_Conversion_Vocabulary.zip`
+- Extract, modify questions, repackage as ZIP
+
+#### Required Package Structure
+Must create a ZIP file containing:
+- `imsmanifest.xml` (Canvas package metadata)
+- `quiz.xml` (QTI 1.2 formatted quiz)
+
+Use `convert_quizzes_to_qti.py` to generate both files automatically.
+
 ---
 
 ## 🎯 STEP 5: Create Assignment Quiz (QTI XML)
@@ -454,18 +520,45 @@ Quizzes/Assignment Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Assignment.xml
 
 ### Requirements
 
+#### ⚠️ CRITICAL: Use Full QTI 1.2 Format
+**MUST use the complete QTI 1.2 format with `<questestinterop>` structure.**
+Simple `<quiz>` format does NOT auto-create quizzes in Canvas!
+
+See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for proper format.
+
 #### Quiz Format
 - **MUST total 100 points** when imported to Canvas
-- **10 questions = 10 points each** (Canvas auto-assigns equal points)
-- **Must include title attribute:** `<quiz title="Lesson XX - Topic Name Assignment Quiz">`
+- **10 questions = 10 points each** (set `points_possible` to 10 in each `<item>`)
+- **MUST use full QTI 1.2 structure** (same as vocabulary quiz)
 
-#### Quiz Settings
+#### Required XML Structure
 ```xml
-<qtimetadata>
-    <qtimetadatafield>
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2
+                 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="lesson_XX_assignment_quiz" title="Lesson XX: Topic Name - Assignment Quiz">
+    <qtimetadata>
+      <qtimetadatafield>
         <fieldlabel>cc_maxattempts</fieldlabel>
         <fieldentry>3</fieldentry>
-    </qtimetadatafield>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_weighting</fieldlabel>
+        <fieldentry>not_weighted</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_timelimit</fieldlabel>
+        <fieldentry>900</fieldentry>  <!-- 15 minutes -->
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <!-- Questions go here -->
+    </section>
+  </assessment>
+</questestinterop>
+```
     <qtimetadatafield>
         <fieldlabel>qmd_timelimit</fieldlabel>
         <fieldentry>900</fieldentry>  <!-- 15 minutes -->
