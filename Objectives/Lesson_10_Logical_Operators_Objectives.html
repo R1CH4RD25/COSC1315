@@ -1,0 +1,109 @@
+<h1>Lesson 10: Logical Operators</h1>
+
+<h2>📚 Learning Objectives</h2>
+
+<p>By the end of this lesson, you will be able to:</p>
+
+<h3>Understand and use the logical AND operator</h3>
+<ul>
+    <li><p>Combine multiple conditions that must ALL be true using <code>and</code></p></li>
+    <li><p>Understand that both conditions must evaluate to <code>True</code> for the overall result to be <code>True</code></p></li>
+    <li><p>Apply <code>and</code> in scenarios like player eligibility (e.g., age AND height requirements)</p></li>
+    <li><p>Recognize that if any condition is <code>False</code>, the entire expression is <code>False</code></p></li>
+</ul>
+
+<h3>Understand and use the logical OR operator</h3>
+<ul>
+    <li><p>Combine multiple conditions where AT LEAST ONE must be true using <code>or</code></p></li>
+    <li><p>Understand that only one condition needs to be <code>True</code> for the overall result to be <code>True</code></p></li>
+    <li><p>Apply <code>or</code> in scenarios like All-Star selection (e.g., high points OR high assists)</p></li>
+    <li><p>Recognize that the expression is only <code>False</code> when ALL conditions are <code>False</code></p></li>
+</ul>
+
+<h3>Understand and use the logical NOT operator</h3>
+<ul>
+    <li><p>Invert boolean values using the <code>not</code> operator</p></li>
+    <li><p>Understand that <code>not True</code> becomes <code>False</code> and <code>not False</code> becomes <code>True</code></p></li>
+    <li><p>Apply <code>not</code> in scenarios checking for the absence of something (e.g., NOT injured, NOT suspended)</p></li>
+    <li><p>Use <code>not</code> to check negative conditions instead of awkward comparisons</p></li>
+</ul>
+
+<h3>Understand boolean logic and truth tables</h3>
+<ul>
+    <li><p>Predict the outcome of compound boolean expressions</p></li>
+    <li><p>Understand truth tables for <code>and</code>, <code>or</code>, and <code>not</code> operators</p></li>
+    <li><p>Combine multiple logical operators in complex conditions</p></li>
+    <li><p>Evaluate expressions with multiple conditions step-by-step</p></li>
+</ul>
+
+<h3>Apply logical operators in real-world scenarios</h3>
+<ul>
+    <li><p>Build eligibility checkers with multiple requirements (team tryouts, playoff qualification)</p></li>
+    <li><p>Create conditional logic for game rules and scoring systems</p></li>
+    <li><p>Validate player statistics and team records with compound conditions</p></li>
+    <li><p>Make decisions based on multiple boolean variables</p></li>
+</ul>
+
+<h3>Recognize common pitfalls</h3>
+<ul>
+    <li><p>Avoid confusing <code>and</code> with <code>or</code> (both vs. at least one)</p></li>
+    <li><p>Remember operator precedence: <code>not</code> is evaluated before <code>and</code>, which is evaluated before <code>or</code></p></li>
+    <li><p>Use parentheses to make complex boolean expressions clear</p></li>
+    <li><p>Understand short-circuit evaluation: Python stops evaluating as soon as the result is determined</p></li>
+</ul>
+
+<hr />
+
+<h2>📝 Assignment Instructions</h2>
+
+<p><strong>Open the Colab Notebook:</strong> <a href="https://colab.research.google.com/github/R1CH4RD25/COSC1315/blob/main/Lessons/Lesson_10_Logical_Operators.ipynb">Lesson 10 Notebook</a></p>
+
+<p><strong>Complete the following tasks:</strong></p>
+
+<ol>
+    <li><p><strong>Follow the walk-along examples</strong> from the Code with Mosh video (1:06:24&ndash;1:11:20)</p>
+        <ul>
+            <li><p>Build a loan eligibility checker using the <code>and</code> operator</p></li>
+            <li><p>Modify the checker to use the <code>or</code> operator</p></li>
+            <li><p>Add criminal record checking using the <code>not</code> operator</p></li>
+        </ul>
+    </li>
+    <li><p><strong>Try It Yourself</strong> &mdash; Build three independent sports-themed programs:</p>
+        <ul>
+            <li><p><strong>Playoff Eligibility:</strong> Check if a team qualifies based on wins AND winning percentage</p></li>
+            <li><p><strong>All-Star Selection:</strong> Determine selection based on points OR assists thresholds</p></li>
+            <li><p><strong>Player Status Check:</strong> Verify player availability using multiple conditions with <code>not</code></p></li>
+        </ul>
+    </li>
+    <li><p><strong>Debug exercises</strong> &mdash; Find and fix errors in code:</p>
+        <ul>
+            <li><p>Confusing <code>and</code> with <code>or</code> in conditional logic</p></li>
+            <li><p>Incorrect use of the <code>not</code> operator</p></li>
+            <li><p>Missing parentheses in complex boolean expressions</p></li>
+        </ul>
+    </li>
+</ol>
+
+<p><strong>Grading:</strong> 100 points total</p>
+<ul>
+    <li><p>Walk-along tasks: 15 points (3 tasks × 5 points each)</p></li>
+    <li><p>Try It Yourself: 50 points</p></li>
+    <li><p>Debug tasks: 35 points</p></li>
+</ul>
+
+<hr />
+
+<h2>🔑 Key Terms</h2>
+
+<ul>
+    <li><p><strong>Logical AND (<code>and</code>)</strong> &mdash; An operator that returns <code>True</code> only if BOTH conditions are true; used when all requirements must be met</p></li>
+    <li><p><strong>Logical OR (<code>or</code>)</strong> &mdash; An operator that returns <code>True</code> if AT LEAST ONE condition is true; used when any requirement can satisfy the condition</p></li>
+    <li><p><strong>Logical NOT (<code>not</code>)</strong> &mdash; An operator that inverts a boolean value (<code>True</code> becomes <code>False</code>, <code>False</code> becomes <code>True</code>)</p></li>
+    <li><p><strong>Boolean Expression</strong> &mdash; An expression that evaluates to either <code>True</code> or <code>False</code></p></li>
+    <li><p><strong>Compound Condition</strong> &mdash; A condition that combines multiple boolean expressions using logical operators</p></li>
+    <li><p><strong>Truth Table</strong> &mdash; A table showing all possible combinations of inputs and their corresponding outputs for logical operators</p></li>
+    <li><p><strong>Short-Circuit Evaluation</strong> &mdash; Python&rsquo;s optimization where it stops evaluating a boolean expression as soon as the result is determined</p></li>
+    <li><p><strong>Operator Precedence</strong> &mdash; The order in which operators are evaluated (<code>not</code> before <code>and</code> before <code>or</code>)</p></li>
+    <li><p><strong>Boolean Variable</strong> &mdash; A variable that stores either <code>True</code> or <code>False</code></p></li>
+    <li><p><strong>Conditional Logic</strong> &mdash; Using boolean expressions to control program flow and make decisions</p></li>
+</ul>

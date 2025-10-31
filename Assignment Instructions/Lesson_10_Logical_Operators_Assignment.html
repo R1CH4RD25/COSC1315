@@ -1,0 +1,289 @@
+<h1>Lesson 10: Logical Operators - Assignment</h1>
+
+<h2>📺 Video Reference</h2>
+<p><strong>Code with Mosh - Python for Beginners</strong></p>
+<p><strong>Timestamp:</strong> 1:06:24&ndash;1:11:20</p>
+<p><strong>Link:</strong> <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=3984s">Watch on YouTube</a></p>
+
+<hr />
+
+<h2>📝 Assignment Overview</h2>
+
+<p>In this lesson, you will learn how to combine multiple conditions using Python&rsquo;s logical operators: <code>and</code>, <code>or</code>, and <code>not</code>. These operators are essential for making complex decisions in your programs.</p>
+
+<h3>What You&rsquo;ll Build:</h3>
+<ul>
+    <li><p><strong>Walk-Along Tasks (15 points):</strong> Follow Mosh&rsquo;s loan eligibility examples</p></li>
+    <li><p><strong>Try It Yourself (50 points):</strong> Build three sports-themed programs using logical operators</p></li>
+    <li><p><strong>Debug Challenges (35 points):</strong> Find and fix logical operator bugs</p></li>
+</ul>
+
+<hr />
+
+<h2>✅ Tasks Breakdown</h2>
+
+<h3>Walk-Along Tasks (15 points total)</h3>
+
+<h4>Task 1: Using AND Operator (5 points)</h4>
+<ul>
+    <li><p>Create boolean variables for high income and good credit</p></li>
+    <li><p>Use <code>and</code> operator to check if BOTH conditions are true</p></li>
+    <li><p>Print eligibility message</p></li>
+</ul>
+
+<h4>Task 2: Using OR Operator (5 points)</h4>
+<ul>
+    <li><p>Modify the previous code to use <code>or</code> instead</p></li>
+    <li><p>Test with different variable values</p></li>
+    <li><p>Understand that only ONE condition needs to be true</p></li>
+</ul>
+
+<h4>Task 3: Using NOT Operator (5 points)</h4>
+<ul>
+    <li><p>Add a criminal record variable</p></li>
+    <li><p>Use <code>not</code> to check for absence of criminal record</p></li>
+    <li><p>Combine with <code>and</code> operator</p></li>
+</ul>
+
+<h3>Try It Yourself (50 points total)</h3>
+
+<h4>Task 1: Playoff Eligibility Checker (15 points)</h4>
+<ul>
+    <li><p>Check if a team qualifies: wins &gt;= 10 AND win_percentage &gt;= 0.600</p></li>
+    <li><p>Use <code>and</code> operator (both conditions must be true)</p></li>
+    <li><p>Print appropriate success/failure messages</p></li>
+    <li><p>Test with multiple scenarios</p></li>
+</ul>
+
+<h4>Task 2: All-Star Selection (20 points)</h4>
+<ul>
+    <li><p>Check if player qualifies: points &gt;= 25 OR assists &gt;= 10</p></li>
+    <li><p>Use <code>or</code> operator (at least one condition must be true)</p></li>
+    <li><p>Print selection status</p></li>
+    <li><p>Test with edge cases</p></li>
+</ul>
+
+<h4>Task 3: Player Availability Checker (15 points)</h4>
+<ul>
+    <li><p>Check if player can play: NOT injured AND NOT suspended</p></li>
+    <li><p>Use <code>not</code> operator with both conditions</p></li>
+    <li><p>Print availability status</p></li>
+    <li><p>Test all combinations (injured/not injured, suspended/not suspended)</p></li>
+</ul>
+
+<h3>Debug Challenges (35 points total)</h3>
+
+<h4>Task 1: Wrong Logical Operator (10 points)</h4>
+<ul>
+    <li><p>Find the bug: <code>or</code> used instead of <code>and</code></p></li>
+    <li><p>Fix to require BOTH conditions</p></li>
+    <li><p>Verify the fix works correctly</p></li>
+</ul>
+
+<h4>Task 2: Incorrect NOT Usage (15 points)</h4>
+<ul>
+    <li><p>Find the bug: <code>not</code> applied to entire expression</p></li>
+    <li><p>Move <code>not</code> to apply only to <code>season_over</code></p></li>
+    <li><p>Understand operator scope</p></li>
+</ul>
+
+<h4>Task 3: Missing Parentheses (10 points)</h4>
+<ul>
+    <li><p>Find the bug: operator precedence issue</p></li>
+    <li><p>Add parentheses to group <code>or</code> conditions</p></li>
+    <li><p>Understand how Python evaluates expressions</p></li>
+</ul>
+
+<hr />
+
+<h2>📋 Step-by-Step Completion Guide</h2>
+
+<ol>
+    <li><p><strong>Open the Colab Notebook</strong></p>
+        <ul>
+            <li><p>Click the link in your Canvas module</p></li>
+            <li><p>The notebook will open in Google Colab</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Run the Setup Cell</strong></p>
+        <ul>
+            <li><p>This downloads the verification system from GitHub</p></li>
+            <li><p>Wait for the &ldquo;Setup complete&rdquo; message</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Watch the Video First</strong></p>
+        <ul>
+            <li><p>Watch timestamp 1:06:24&ndash;1:11:20</p></li>
+            <li><p>Pay attention to how Mosh uses each operator</p></li>
+            <li><p>Understand the difference between <code>and</code>, <code>or</code>, and <code>not</code></p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Complete Walk-Along Tasks</strong></p>
+        <ul>
+            <li><p>Type the code as Mosh demonstrates</p></li>
+            <li><p>Run each verification cell to check your work</p></li>
+            <li><p>Make sure you earn all 15 points</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Complete Try It Yourself Tasks</strong></p>
+        <ul>
+            <li><p>Read each scenario carefully</p></li>
+            <li><p>Think about which operator to use: <code>and</code>, <code>or</code>, or <code>not</code></p></li>
+            <li><p>Test your code with different values</p></li>
+            <li><p>Run verification to earn points</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Debug the Bugs</strong></p>
+        <ul>
+            <li><p>Read the code carefully to find the bug</p></li>
+            <li><p>Fix the logical operator or add parentheses</p></li>
+            <li><p>Run verification to confirm the fix</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Calculate Your Grade</strong></p>
+        <ul>
+            <li><p>Run the final cell to see your score</p></li>
+            <li><p>Review any tasks where you lost points</p></li>
+            <li><p>Fix and re-verify until you reach 100/100</p></li>
+        </ul>
+    </li>
+    
+    <li><p><strong>Submit Through Google Classroom</strong></p>
+        <ul>
+            <li><p>File → Download → Download .ipynb</p></li>
+            <li><p>Upload to Google Classroom assignment</p></li>
+            <li><p>Or share your Colab link (make sure sharing is enabled)</p></li>
+        </ul>
+    </li>
+</ol>
+
+<hr />
+
+<h2>💡 Tips for Success</h2>
+
+<div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 16px 0;">
+    <p><strong>Understanding Logical Operators:</strong></p>
+    <ul>
+        <li><p><code>and</code>: <strong>Both</strong> conditions must be True (think &ldquo;strict requirements&rdquo;)</p></li>
+        <li><p><code>or</code>: <strong>At least one</strong> condition must be True (think &ldquo;flexible options&rdquo;)</p></li>
+        <li><p><code>not</code>: <strong>Inverts</strong> the boolean value (True → False, False → True)</p></li>
+    </ul>
+</div>
+
+<div style="background-color: #d1ecf1; border-left: 4px solid #17a2b8; padding: 12px; margin: 16px 0;">
+    <p><strong>Testing Your Logic:</strong></p>
+    <ul>
+        <li><p>Try different combinations of True/False values</p></li>
+        <li><p>Make a mental truth table for complex conditions</p></li>
+        <li><p>Use print statements to check intermediate values</p></li>
+        <li><p>Ask yourself: &ldquo;Do I need both conditions or just one?&rdquo;</p></li>
+    </ul>
+</div>
+
+<div style="background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 12px; margin: 16px 0;">
+    <p><strong>Common Mistakes to Avoid:</strong></p>
+    <ul>
+        <li><p>Confusing <code>and</code> with <code>or</code> (think about the scenario carefully)</p></li>
+        <li><p>Forgetting that <code>not</code> only applies to what comes right after it</p></li>
+        <li><p>Missing parentheses in complex expressions: <code>(A or B) and C</code> is different from <code>A or (B and C)</code></p></li>
+        <li><p>Using <code>=</code> instead of <code>==</code> for comparisons</p></li>
+    </ul>
+</div>
+
+<hr />
+
+<h2>📊 Grading Rubric</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr style="background-color: #f8f9fa;">
+            <th>Component</th>
+            <th>Points</th>
+            <th>Criteria</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Walk-Along Tasks</strong></td>
+            <td>15</td>
+            <td>
+                <ul>
+                    <li>Task 1 (AND operator): 5 points</li>
+                    <li>Task 2 (OR operator): 5 points</li>
+                    <li>Task 3 (NOT operator): 5 points</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Try It Yourself</strong></td>
+            <td>50</td>
+            <td>
+                <ul>
+                    <li>Playoff Eligibility: 15 points</li>
+                    <li>All-Star Selection: 20 points</li>
+                    <li>Player Availability: 15 points</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Debug Challenges</strong></td>
+            <td>35</td>
+            <td>
+                <ul>
+                    <li>Wrong operator: 10 points</li>
+                    <li>Incorrect NOT usage: 15 points</li>
+                    <li>Missing parentheses: 10 points</li>
+                </ul>
+            </td>
+        </tr>
+        <tr style="background-color: #e9ecef; font-weight: bold;">
+            <td><strong>TOTAL</strong></td>
+            <td><strong>100</strong></td>
+            <td>Auto-graded by verification system</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<h2>🆘 Need Help?</h2>
+
+<p><strong>If you&rsquo;re stuck:</strong></p>
+<ol>
+    <li><p>Re-watch the video section (1:06:24&ndash;1:11:20)</p></li>
+    <li><p>Read the verification feedback &mdash; it tells you exactly what&rsquo;s wrong</p></li>
+    <li><p>Review the walk-along examples &mdash; they show the patterns you need</p></li>
+    <li><p>Test your logic manually with different values</p></li>
+    <li><p>Ask for help in Google Classroom or during class</p></li>
+</ol>
+
+<p><strong>Resources:</strong></p>
+<ul>
+    <li><p><a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=3984s">Video: Logical Operators (1:06:24&ndash;1:11:20)</a></p></li>
+    <li><p>Lesson Objectives page (review key concepts)</p></li>
+    <li><p>Google Classroom discussion board</p></li>
+</ul>
+
+<hr />
+
+<h2>🎯 Learning Outcomes</h2>
+
+<p>By completing this assignment, you will be able to:</p>
+<ul>
+    <li><p>Combine multiple conditions using <code>and</code>, <code>or</code>, and <code>not</code> operators</p></li>
+    <li><p>Understand the difference between requiring all conditions vs. at least one condition</p></li>
+    <li><p>Use the <code>not</code> operator to check for the absence of something</p></li>
+    <li><p>Apply logical operators to real-world scenarios (sports eligibility, availability checks)</p></li>
+    <li><p>Debug common logical operator mistakes (wrong operator, incorrect NOT usage, missing parentheses)</p></li>
+    <li><p>Understand operator precedence and when to use parentheses</p></li>
+</ul>
+
+<p><strong>Due Date:</strong> See Canvas for the due date (48-hour grace period applies)</p>
+<p><strong>Submission:</strong> Google Classroom</p>
+<p><strong>Format:</strong> Jupyter Notebook (.ipynb) or shared Colab link</p>
