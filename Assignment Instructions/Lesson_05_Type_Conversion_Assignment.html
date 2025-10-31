@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 05: Type Conversion - Assignment Instructions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        li p {
+            margin: 5px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .note {
+            background-color: #fff3cd;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lesson 05 — Type Conversion</h1>
+        
+        <h2><strong>Assignment Instructions</strong></h2>
+        <p>For this activity, you will:</p>
+        <ul>
+            <li>
+                <p>Open a new notebook in <strong>Google Colab</strong> and give it a title that reflects <strong>Lesson 05 — Type Conversion</strong>.</p>
+            </li>
+            <li>
+                <p>Create a short program that asks the user for their <strong>birth year</strong>, converts the input into an integer, and calculates their <strong>age</strong>.</p>
+            </li>
+            <li>
+                <p>Add a second <code>print()</code> statement that uses the <code>type()</code> function to display the data types of both variables (<code>birth_year</code> and <code>age</code>).</p>
+            </li>
+            <li>
+                <p>Write another program that asks the user for their <strong>weight in pounds</strong>, converts it into <strong>kilograms</strong>, and prints the result.</p>
+            </li>
+            <li>
+                <p>Use <code>int()</code> and <code>float()</code> conversions appropriately to see how different numeric types affect your result.</p>
+            </li>
+            <li>
+                <p>Include one quick test using <code>bool()</code> to convert any user input into a Boolean and print the outcome.</p>
+            </li>
+            <li>
+                <p>Save and submit your completed notebook through <strong>Google Classroom</strong> when finished.</p>
+            </li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 Type Conversion Functions:</strong>
+            <ul style="margin: 10px 0;">
+                <li><code>int()</code> — Converts to integer (whole number)</li>
+                <li><code>float()</code> — Converts to float (decimal number)</li>
+                <li><code>str()</code> — Converts to string (text)</li>
+                <li><code>bool()</code> — Converts to boolean (True/False)</li>
+                <li><code>type()</code> — Shows the data type of a variable</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>⚠️ Common Mistake:</strong> Remember that <code>input()</code> always returns a string! If you want to do math with user input, you MUST convert it first using <code>int()</code> or <code>float()</code>. Otherwise, Python will concatenate (join) instead of add!
+        </div>
+    </div>
+</body>
+</html>
