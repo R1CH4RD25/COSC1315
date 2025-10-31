@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    
+    <div class="container">
         <h1>Lesson 03 — Variables</h1>
 
         <h2><strong>Assignment Instructions</strong></h2>
@@ -109,6 +109,6 @@
                 <li><code>is_playoff_bound = True</code> (boolean)</li>
             </ul>
         </div>
-    
+    </div>
 </body>
 </html>

@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    
+    <div class="container">
         <h1>Lesson 06 — Strings</h1>
         
         <h2><strong>Assignment Instructions</strong></h2>
@@ -103,6 +103,6 @@
                 <li>Access last character: <code>"GOAT"[-1]</code> → <code>"T"</code></li>
             </ul>
         </div>
-    
+    </div>
 </body>
 </html>

@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    
+    <div class="container">
         <h1>Lesson 07 — Formatted Strings</h1>
         
         <h2><strong>Assignment Instructions</strong></h2>
@@ -109,6 +109,6 @@
                 Total Impact: 40.3 combined stats
             </p>
         </div>
-    
+    </div>
 </body>
 </html>

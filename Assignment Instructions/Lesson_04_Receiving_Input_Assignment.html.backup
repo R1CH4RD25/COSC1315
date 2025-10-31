@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    
+    <div class="container">
         <h1>Lesson 04 — Receiving Input</h1>
 
         <h2><strong>Assignment Instructions</strong></h2>
@@ -102,6 +102,6 @@
                 <li><code>print(f"Hi {name}! Go {team}!")</code></li>
             </ul>
         </div>
-    
+    </div>
 </body>
 </html>

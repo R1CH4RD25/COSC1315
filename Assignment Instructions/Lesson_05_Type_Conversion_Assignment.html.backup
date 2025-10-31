@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 04: Receiving Input - Assignment Instructions</title>
+    <title>Lesson 05: Type Conversion - Assignment Instructions</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,32 +58,29 @@
     </style>
 </head>
 <body>
-    
-        <h1>Lesson 04 — Receiving Input</h1>
-
+    <div class="container">
+        <h1>Lesson 05 — Type Conversion</h1>
+        
         <h2><strong>Assignment Instructions</strong></h2>
         <p>For this activity, you will:</p>
         <ul>
             <li>
-                <p>Open a new notebook in <strong>Google Colab</strong> and give it a title that reflects <strong>Lesson 04 — Receiving Input</strong>.</p>
+                <p>Open a new notebook in <strong>Google Colab</strong> and give it a title that reflects <strong>Lesson 05 — Type Conversion</strong>.</p>
             </li>
             <li>
-                <p>Use the <code>input()</code> function to ask the user for their name and store it in a variable, then print a personalized greeting (e.g., <code>"Welcome, Sarah!"</code>).</p>
+                <p>Create a short program that asks the user for their <strong>birth year</strong>, converts the input into an integer, and calculates their <strong>age</strong>.</p>
             </li>
             <li>
-                <p>Create a program that asks for the user's favorite team and favorite player, storing each response in separate variables and displaying them back in a formatted message.</p>
+                <p>Add a second <code>print()</code> statement that uses the <code>type()</code> function to display the data types of both variables (<code>birth_year</code> and <code>age</code>).</p>
             </li>
             <li>
-                <p>Write a program that prompts the user to enter a player's jersey number and the number of points they scored, then displays both values in a summary message.</p>
+                <p>Write another program that asks the user for their <strong>weight in pounds</strong>, converts it into <strong>kilograms</strong>, and prints the result.</p>
             </li>
             <li>
-                <p>Practice using <strong>descriptive prompts</strong> inside the <code>input()</code> function so users know exactly what information to enter (e.g., <code>input("Enter your favorite sport: ")</code>).</p>
+                <p>Use <code>int()</code> and <code>float()</code> conversions appropriately to see how different numeric types affect your result.</p>
             </li>
             <li>
-                <p>Understand that <code>input()</code> always returns a string, even when users enter numbers—you'll learn how to convert these strings to numbers in the next lesson.</p>
-            </li>
-            <li>
-                <p>Create a multi-step interactive program that asks 3-4 questions about sports preferences and displays all responses at the end in a formatted summary.</p>
+                <p>Include one quick test using <code>bool()</code> to convert any user input into a Boolean and print the outcome.</p>
             </li>
             <li>
                 <p>Save and submit your completed notebook through <strong>Google Classroom</strong> when finished.</p>
@@ -91,17 +88,19 @@
         </ul>
 
         <div class="note">
-            <strong>💡 Remember:</strong> When you run a cell with <code>input()</code> in Google Colab, a text box will appear below the cell. Type your response and press Enter. The program will wait for you to provide input before continuing!
+            <strong>💡 Type Conversion Functions:</strong>
+            <ul style="margin: 10px 0;">
+                <li><code>int()</code> — Converts to integer (whole number)</li>
+                <li><code>float()</code> — Converts to float (decimal number)</li>
+                <li><code>str()</code> — Converts to string (text)</li>
+                <li><code>bool()</code> — Converts to boolean (True/False)</li>
+                <li><code>type()</code> — Shows the data type of a variable</li>
+            </ul>
         </div>
 
         <div class="note">
-            <strong>🏈 Example Program:</strong>
-            <ul style="margin: 10px 0;">
-                <li><code>name = input("What's your name? ")</code></li>
-                <li><code>team = input("What's your favorite team? ")</code></li>
-                <li><code>print(f"Hi {name}! Go {team}!")</code></li>
-            </ul>
+            <strong>⚠️ Common Mistake:</strong> Remember that <code>input()</code> always returns a string! If you want to do math with user input, you MUST convert it first using <code>int()</code> or <code>float()</code>. Otherwise, Python will concatenate (join) instead of add!
         </div>
-    
+    </div>
 </body>
 </html>
