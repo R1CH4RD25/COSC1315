@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz title="Lesson 09 - If Statements Assignment Quiz">
+  <question>
+    <questiontext>
+      <text>A basketball player scored 32 points. Write code that prints "MVP performance!" if points are greater than 30. What is the correct if statement?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>if points &gt; 30:
+    print("MVP performance!")</text>
+    </answer>
+    <answer fraction="0">
+      <text>if points = 30:
+    print("MVP performance!")</text>
+    </answer>
+    <answer fraction="0">
+      <text>if points &gt; 30
+    print("MVP performance!")</text>
+    </answer>
+    <answer fraction="0">
+      <text>if (points &gt; 30)
+print("MVP performance!")</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A team's win percentage is 0.650. Which if statement checks if they have a winning record (above .500)?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>if win_percentage &gt; 0.500:</text>
+    </answer>
+    <answer fraction="0">
+      <text>if win_percentage = 0.500:</text>
+    </answer>
+    <answer fraction="0">
+      <text>if win_percentage &gt; "0.500":</text>
+    </answer>
+    <answer fraction="0">
+      <text>if win_percentage == 0.500:</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A player's jersey number is 23. What prints?
+jersey_number = 23
+if jersey_number == 23:
+    print("That's Jordan!")
+else:
+    print("Not Jordan")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>That's Jordan!</text>
+    </answer>
+    <answer fraction="0">
+      <text>Not Jordan</text>
+    </answer>
+    <answer fraction="0">
+      <text>Both messages print</text>
+    </answer>
+    <answer fraction="0">
+      <text>Nothing prints</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A team scored 95 points. What prints?
+score = 95
+if score &gt;= 100:
+    print("Century!")
+elif score &gt;= 90:
+    print("Great offense!")
+else:
+    print("Low scoring")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Great offense!</text>
+    </answer>
+    <answer fraction="0">
+      <text>Century!</text>
+    </answer>
+    <answer fraction="0">
+      <text>Low scoring</text>
+    </answer>
+    <answer fraction="0">
+      <text>Both Century! and Great offense!</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>What's wrong with this code?
+age = 18
+if age &gt;= 18
+    print("Can vote")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Missing colon after the if condition</text>
+    </answer>
+    <answer fraction="0">
+      <text>Wrong comparison operator</text>
+    </answer>
+    <answer fraction="0">
+      <text>Missing quotation marks</text>
+    </answer>
+    <answer fraction="0">
+      <text>Nothing is wrong</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A quarterback's rating is 115.8. Which condition checks if it's above the elite threshold of 100.0?</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>if qb_rating &gt; 100.0:</text>
+    </answer>
+    <answer fraction="0">
+      <text>if qb_rating = 100.0:</text>
+    </answer>
+    <answer fraction="0">
+      <text>if qb_rating &lt; 100.0:</text>
+    </answer>
+    <answer fraction="0">
+      <text>if qb_rating == 100.0:</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>What's the error in this code?
+score = 100
+if score = 100:
+    print("Perfect!")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Using = instead of == for comparison</text>
+    </answer>
+    <answer fraction="0">
+      <text>Missing colon</text>
+    </answer>
+    <answer fraction="0">
+      <text>Wrong indentation</text>
+    </answer>
+    <answer fraction="0">
+      <text>Nothing is wrong</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A team has 45 wins and 37 losses. What prints?
+wins = 45
+losses = 37
+if wins &gt; losses:
+    print("Winning season!")
+else:
+    print("Losing season")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Winning season!</text>
+    </answer>
+    <answer fraction="0">
+      <text>Losing season</text>
+    </answer>
+    <answer fraction="0">
+      <text>Both messages</text>
+    </answer>
+    <answer fraction="0">
+      <text>Nothing prints</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>What's wrong with this code?
+temperature = 85
+if temperature &gt; 80:
+print("Hot day!")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Missing indentation before print statement</text>
+    </answer>
+    <answer fraction="0">
+      <text>Missing colon after if</text>
+    </answer>
+    <answer fraction="0">
+      <text>Wrong comparison operator</text>
+    </answer>
+    <answer fraction="0">
+      <text>Nothing is wrong</text>
+    </answer>
+  </question>
+
+  <question>
+    <questiontext>
+      <text>A player's height is 78 inches. What prints?
+height = 78
+if height &gt;= 84:
+    print("Very tall")
+elif height &gt;= 72:
+    print("Tall")
+elif height &gt;= 60:
+    print("Average")
+else:
+    print("Short")</text>
+    </questiontext>
+    <answer fraction="100">
+      <text>Tall</text>
+    </answer>
+    <answer fraction="0">
+      <text>Very tall</text>
+    </answer>
+    <answer fraction="0">
+      <text>Average</text>
+    </answer>
+    <answer fraction="0">
+      <text>All messages print</text>
+    </answer>
+  </question>
+</quiz>

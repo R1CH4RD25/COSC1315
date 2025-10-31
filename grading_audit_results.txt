@@ -1,0 +1,146 @@
+================================================================================
+COMPREHENSIVE GRADING VALIDATION AUDIT
+Comparing Notebook Point Values vs Verification Script Awards
+================================================================================
+\n================================================================================
+LESSON 05
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [4, 4, 4, 3] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [5, 5, 5, 5] = 20 pts
+  Try It:     [15, 15, 10] = 40 pts
+  Debug:      [15, 15, 10] = 40 pts
+  TOTAL:      100 points
+  Declared:   None points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+  ✅ Verification awards exactly 100 points
+  ✅ Notebook and verification match!
+\n  SECTION MISMATCHES:
+    ❌ Walk-Along: Notebook=15, Verification=20
+    ❌ Try It: Notebook=50, Verification=40
+    ❌ Debug: Notebook=35, Verification=40
+\n================================================================================
+LESSON 06
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [5, 5, 5] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [] = 0 pts
+  Try It:     [] = 0 pts
+  Debug:      [] = 0 pts
+  TOTAL:      0 points
+  Declared:   100 points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+
+  ❌ Verification awards 0 points (should be 100)
+  ❌ calculate_grade declares 100 but functions award 0
+  ❌ MISMATCH: Notebook shows 100 but verification awards 0
+\n  SECTION MISMATCHES:
+    ❌ Walk-Along: Notebook=15, Verification=0
+    ❌ Try It: Notebook=50, Verification=0
+    ❌ Debug: Notebook=35, Verification=0
+\n================================================================================
+LESSON 07
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [8, 7] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [] = 0 pts
+  Try It:     [] = 0 pts
+  Debug:      [] = 0 pts
+  TOTAL:      0 points
+  Declared:   100 points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+
+  ❌ Verification awards 0 points (should be 100)
+  ❌ calculate_grade declares 100 but functions award 0
+  ❌ MISMATCH: Notebook shows 100 but verification awards 0
+\n  SECTION MISMATCHES:
+    ❌ Walk-Along: Notebook=15, Verification=0
+    ❌ Try It: Notebook=50, Verification=0
+    ❌ Debug: Notebook=35, Verification=0
+\n================================================================================
+LESSON 08
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [4, 4, 4, 3] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [4, 3, 4, 4] = 15 pts
+  Try It:     [15, 20, 15] = 50 pts
+  Debug:      [15, 15, 10] = 40 pts
+  TOTAL:      105 points
+  Declared:   105 points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+  ✅ calculate_grade declaration matches function awards
+
+  ❌ Verification awards 105 points (should be 100)
+  ❌ MISMATCH: Notebook shows 100 but verification awards 105
+\n  SECTION MISMATCHES:
+    ❌ Debug: Notebook=35, Verification=40
+\n================================================================================
+LESSON 09
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [4, 4, 4, 3] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [] = 0 pts
+  Try It:     [] = 0 pts
+  Debug:      [] = 0 pts
+  TOTAL:      0 points
+  Declared:   100 points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+
+  ❌ Verification awards 0 points (should be 100)
+  ❌ calculate_grade declares 100 but functions award 0
+  ❌ MISMATCH: Notebook shows 100 but verification awards 0
+\n  SECTION MISMATCHES:
+    ❌ Walk-Along: Notebook=15, Verification=0
+    ❌ Try It: Notebook=50, Verification=0
+    ❌ Debug: Notebook=35, Verification=0
+\n================================================================================
+LESSON 10
+================================================================================
+\nNOTEBOOK (what students see):
+  Walk-Along: [4, 4, 4, 3] = 15 pts
+  Try It:     [17, 17, 16] = 50 pts
+  Debug:      [12, 12, 11] = 35 pts
+  TOTAL:      100 points
+\nVERIFICATION SCRIPT (what system awards):
+  Walk-Along: [] = 0 pts
+  Try It:     [] = 0 pts
+  Debug:      [] = 0 pts
+  TOTAL:      0 points
+  Declared:   None points (in calculate_grade)
+\nVALIDATION:
+  ✅ Notebook shows exactly 100 points
+
+  ❌ Verification awards 0 points (should be 100)
+  ❌ MISMATCH: Notebook shows 100 but verification awards 0
+\n  SECTION MISMATCHES:
+    ❌ Walk-Along: Notebook=15, Verification=0
+    ❌ Try It: Notebook=50, Verification=0
+    ❌ Debug: Notebook=35, Verification=0
+\n================================================================================
+AUDIT COMPLETE
+================================================================================

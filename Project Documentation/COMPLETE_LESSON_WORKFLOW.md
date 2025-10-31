@@ -10,6 +10,7 @@
 ## ⚠️ CRITICAL REQUIREMENTS
 
 ### Point Values - ALL ASSIGNMENTS MUST EQUAL 100 POINTS
+
 **Every Canvas assignment/lesson component MUST total exactly 100 points.**
 
 - **Vocabulary Quiz:** 100 points (10 questions × 10 points each)
@@ -18,16 +19,19 @@
   - Walk-Along Exercises: ~15 points
   - Try It Yourself: ~50 points
   - Debug Challenges: ~35 points
-  - *(Adjust exercise counts/points as needed, but MUST total 100)*
+  - _(Adjust exercise counts/points as needed, but MUST total 100)_
 
 ### Quiz Format
+
 **ALL quizzes MUST use full QTI 1.2 format** (`<questestinterop>` structure).
+
 - ❌ Simple `<quiz>` format does NOT auto-create quizzes in Canvas
 - ✅ Use `convert_quizzes_to_qti.py` script to convert simple format to QTI 1.2
 - ✅ Reference Lessons 05-10 quizzes for proper format examples
 - ✅ Replace `&#x27;` HTML entities with regular apostrophes `'`
 
 ### HTML Requirements
+
 - ❌ NO container `<div>` wrappers in Objectives or Assignment Instructions HTML
 - ✅ Start directly with `<h1>` tag after `<body>`
 
@@ -45,9 +49,11 @@ For each lesson, create **FOUR components** in this order:
 ---## 🎯 STEP 1: Create Learning Objectives (HTML)
 
 ### Purpose
+
 Canvas assignment page that students see before opening the Colab notebook. Provides clear expectations and vocabulary.
 
 ### File Location
+
 ```
 Objectives/Lesson_XX_Topic_Name_Objectives.html
 ```
@@ -55,19 +61,22 @@ Objectives/Lesson_XX_Topic_Name_Objectives.html
 ### Required Structure
 
 #### **Section 1: Learning Objectives**
+
 Format:
+
 ```html
 <h2>Learning Objectives</h2>
 <p>By the end of this lesson, students will be able to:</p>
 
 <p><strong>Objective Category Name</strong></p>
 <ul>
-    <li><p>Specific measurable outcome with examples</p></li>
-    <li><p>Another specific outcome</p></li>
+  <li><p>Specific measurable outcome with examples</p></li>
+  <li><p>Another specific outcome</p></li>
 </ul>
 ```
 
 **Requirements:**
+
 - **5-7 objective categories** (bold headers)
 - **12-16 specific measurable outcomes** (bullet points)
 - Use `<code>` tags for Python code: `<code>input()</code>`
@@ -75,42 +84,63 @@ Format:
 - Last category always: **"Recognize common pitfalls"**
 
 #### **Section 2: Assignment Instructions**
+
 Format:
+
 ```html
 <hr />
 <h2>Assignment Instructions</h2>
 <p>For this activity, you will:</p>
 <ul>
-    <li><p>Open a new notebook in Google Colab and give it a title that reflects <strong>Lesson XX &mdash; Topic Name</strong>.</p></li>
-    <li>
-        <p>Write a program that:</p>
-        <ul>
-            <li><p>Specific coding task with code example</p></li>
-            <li><p>Another requirement</p></li>
-        </ul>
-    </li>
-    <li><p>Run all cells top-to-bottom to ensure there are no errors.</p></li>
-    <li><p>Save and submit your completed notebook through <strong>Google Classroom</strong>.</p></li>
+  <li>
+    <p>
+      Open a new notebook in Google Colab and give it a title that reflects
+      <strong>Lesson XX &mdash; Topic Name</strong>.
+    </p>
+  </li>
+  <li>
+    <p>Write a program that:</p>
+    <ul>
+      <li><p>Specific coding task with code example</p></li>
+      <li><p>Another requirement</p></li>
+    </ul>
+  </li>
+  <li><p>Run all cells top-to-bottom to ensure there are no errors.</p></li>
+  <li>
+    <p>
+      Save and submit your completed notebook through
+      <strong>Google Classroom</strong>.
+    </p>
+  </li>
 </ul>
 ```
 
 **Requirements:**
+
 - Nested bullet structure (main tasks → sub-tasks)
 - Concrete code examples where relevant
 - Clear step-by-step instructions
 - Final step always: "Run all cells... submit through Google Classroom"
 
 #### **Section 3: Key Terms (Vocabulary)**
+
 Format:
+
 ```html
 <hr />
 <h2>Key Terms</h2>
 <ul>
-    <li><p><strong>Term Name</strong> &mdash; Clear, concise definition with example if needed.</p></li>
+  <li>
+    <p>
+      <strong>Term Name</strong> &mdash; Clear, concise definition with example
+      if needed.
+    </p>
+  </li>
 </ul>
 ```
 
 **Requirements:**
+
 - **EXACTLY 10 terms** (no more, no fewer)
 - Each term: `<strong>Term</strong> &mdash; Definition`
 - Definitions must be testable (for vocabulary quiz)
@@ -118,6 +148,7 @@ Format:
 - Use `<code>` tags for code elements in definitions
 
 ### HTML Formatting Standards
+
 - Use `&mdash;` for em-dashes (not `-` or `--`)
 - Use `&rsquo;` for apostrophes in contractions
 - Use `<code>` for all code elements
@@ -126,6 +157,7 @@ Format:
 - Use `&nbsp;` for blank lines
 
 ### Example Reference
+
 See `Objectives/Lesson_02_How_Python_Code_Gets_Executed_Objectives.html` or the Lesson 04 example provided in this document.
 
 ---
@@ -133,9 +165,11 @@ See `Objectives/Lesson_02_How_Python_Code_Gets_Executed_Objectives.html` or the 
 ## 📓 STEP 2: Create Lesson Notebook (Google Colab)
 
 ### Purpose
+
 Interactive coding lesson where students watch video, code along, and get auto-graded feedback.
 
 ### File Location
+
 ```
 Lessons/Lesson_XX_Topic_Name.ipynb
 ```
@@ -143,13 +177,16 @@ Lessons/Lesson_XX_Topic_Name.ipynb
 ### Required Structure
 
 #### **Cell 1: Title**
+
 ```markdown
 # Lesson XX — Topic Name (MM:SS–MM:SS)
 ```
 
 #### **Cell 2: Watch Section**
+
 ```markdown
 ## 🎥 Watch
+
 **Clip:** MM:SS–MM:SS
 **Video:** [Code with Mosh - Python for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=XXXXs)
 
@@ -157,21 +194,25 @@ Lessons/Lesson_XX_Topic_Name.ipynb
 ```
 
 #### **Cell 3: Learning Objectives**
+
 ```markdown
 ## 📚 Objectives and Learning Goals
 
 By the end of this lesson, you will be able to:
+
 - Objective 1 from HTML file
 - Objective 2 from HTML file
 - [etc.]
 
 ### Key Concepts:
+
 - Key concept 1 (simplified from objectives)
 - Key concept 2
 - [4-6 bullet points total]
 ```
 
 #### **Cell 4: Setup Cell** (Python)
+
 **CRITICAL:** This cell downloads verification file from GitHub
 
 ```python
@@ -210,6 +251,7 @@ print('✅ Setup complete! You\'re ready to start coding.')
 ```
 
 **Requirements:**
+
 - Always use `urllib.request` (not wget)
 - Include file size verification
 - Print current directory for debugging
@@ -217,6 +259,7 @@ print('✅ Setup complete! You\'re ready to start coding.')
 - Success message at end
 
 #### **Cell 5: Walk-Along Tasks Section**
+
 ```markdown
 ## 📺 Walk-Along Tasks
 
@@ -225,6 +268,7 @@ print('✅ Setup complete! You\'re ready to start coding.')
 **Total Points:** ~15 points (adjust as needed to reach 100 total)
 
 **Note:** Entire notebook assignment must equal **100 points total**
+
 - Walk-Along: ~15 points
 - Try It Yourself: ~50 points
 - Debug Challenges: ~35 points
@@ -233,13 +277,16 @@ print('✅ Setup complete! You\'re ready to start coding.')
 ```
 
 #### **Cells 6+: Individual Walk-Along Tasks**
+
 Pattern for each task:
+
 ```markdown
 ### Walk-Along Task N: Task Name (X points)
 
 **Goal:** Brief description of what to accomplish
 
 **Instructions:**
+
 1. Step 1
 2. Step 2
 3. Step 3
@@ -248,42 +295,51 @@ Pattern for each task:
 ```
 
 Followed by:
+
 ```python
 # Student code cell (empty or starter code)
 ```
 
 Then:
+
 ```python
 # Verification cell
 verify_walk_along_N()
 ```
 
 **Requirements:**
+
 - 3-4 walk-along tasks matching Mosh video examples
 - Each task: markdown description → code cell → verification cell
 - Clear numbered instructions
 - 5 points per task typically
 
 #### **Try It Yourself Section**
+
 Similar structure but tasks require independent thinking:
+
 - More challenging than walk-along
 - Apply concepts from video to new scenarios
 - Sports-themed examples where possible
 - 10-15 points per task
 
 #### **Debug the Bug Section**
+
 Tasks with intentional errors:
+
 - Code provided with subtle bugs
 - Student must find and fix
 - Tests debugging skills
 - 10-15 points per task
 
 #### **Grade Calculation Cell**
+
 ```python
 calculate_grade()
 ```
 
 #### **Help Section**
+
 ```markdown
 ## 🆘 I'm Stuck! What Do I Do?
 
@@ -294,6 +350,7 @@ calculate_grade()
 ```
 
 ### Code Style Requirements
+
 - Use sports examples where appropriate (touchdowns, yards, basketball)
 - Clear variable names (no `x`, `y` - use `touchdowns`, `points`)
 - Comments explaining tricky parts
@@ -305,14 +362,17 @@ calculate_grade()
 ## 🔍 STEP 3: Create Verification System (Python)
 
 ### Purpose
+
 Auto-grading functions that check student code and provide instant feedback.
 
 ### File Location
+
 ```
 Lessons/Verifications/lesson_XX_verification.py
 ```
 
 ### Requirements
+
 - One verification function per task
 - `calculate_grade()` function that summarizes all scores
 - Check variable existence, types, and values
@@ -321,6 +381,7 @@ Lessons/Verifications/lesson_XX_verification.py
 - Show point breakdown clearly
 
 ### Example Function Structure
+
 ```python
 def verify_walk_along_1():
     """
@@ -359,6 +420,7 @@ def verify_walk_along_1():
 ```
 
 ### Repository Upload
+
 - Push to GitHub: `Lessons/Verifications/lesson_XX_verification.py`
 - File must be publicly accessible
 - URL pattern: `https://raw.githubusercontent.com/R1CH4RD25/COSC1315/main/Lessons/Verifications/lesson_XX_verification.py`
@@ -368,9 +430,11 @@ def verify_walk_along_1():
 ## 📝 STEP 4: Create Vocabulary Quiz (QTI XML)
 
 ### Purpose
+
 10-question Canvas quiz testing key terminology and concepts.
 
 ### File Location
+
 ```
 Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
 ```
@@ -378,17 +442,20 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
 ### Requirements
 
 #### ⚠️ CRITICAL: Use Full QTI 1.2 Format
+
 **MUST use the complete QTI 1.2 format with `<questestinterop>` structure.**
 Simple `<quiz>` format does NOT auto-create quizzes in Canvas!
 
 See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for proper format.
 
 #### Quiz Format
+
 - **MUST total 100 points** when imported to Canvas
 - **10 questions = 10 points each** (set `points_possible` to 10 in each `<item>`)
 - **MUST use full QTI 1.2 structure** (see Required Structure below)
 
 #### Required XML Structure
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
@@ -418,17 +485,21 @@ See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for pro
 ```
 
 #### Question Content
+
 - **10 questions total** (exactly 10, no more, no fewer)
 - **1 point per question**
 - **Multiple choice format**
 - **Questions derived from Key Terms section** of objectives HTML
 
 #### Question Types
+
 1. **Definition Questions** (4-5 questions)
+
    - "What does the `input()` function do?"
    - Direct testing of vocabulary definitions
 
 2. **Conceptual Questions** (3-4 questions)
+
    - "Why does input() always return a string?"
    - Testing understanding of concepts
 
@@ -437,17 +508,20 @@ See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for pro
    - Testing when/how to use terms
 
 #### Answer Choices
+
 - 4 options per question (a, b, c, d)
 - One clearly correct answer
 - Distractors should be plausible but wrong
 - Avoid "all of the above" or "none of the above"
 
 #### HTML Encoding
+
 - Use `&lt;code&gt;` for code in questions: `&lt;code&gt;input()&lt;/code&gt;`
 - Escape special characters properly
 - Use `&lt;pre&gt;` for code blocks
 
 ### Example Question Structure
+
 ```xml
 <item ident="q1" title="Question 1">
     <itemmetadata>
@@ -506,17 +580,22 @@ See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for pro
 ```
 
 #### How to Create Quizzes
+
 **Option 1: Use the Conversion Script (Recommended)**
+
 1. Create quiz in simple format with `<quiz>`, `<question>`, `<answer fraction="100">` tags
 2. Run: `python convert_quizzes_to_qti.py` (modify script with your lesson details)
 3. Script converts to full QTI 1.2 format automatically
 
 **Option 2: Manual Creation**
+
 - Copy structure from `Lessons/Vocabulary Quizzes - QTI - Canvas/Lesson_05_Type_Conversion_Vocabulary.zip`
 - Extract, modify questions, repackage as ZIP
 
 #### Required Package Structure
+
 Must create a ZIP file containing:
+
 - `imsmanifest.xml` (Canvas package metadata)
 - `quiz.xml` (QTI 1.2 formatted quiz)
 
@@ -527,9 +606,11 @@ Use `convert_quizzes_to_qti.py` to generate both files automatically.
 ## 🎯 STEP 5: Create Assignment Quiz (QTI XML)
 
 ### Purpose
+
 10-question Canvas quiz testing practical application and problem-solving.
 
 ### File Location
+
 ```
 Quizzes/Assignment Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Assignment.xml
 ```
@@ -537,17 +618,20 @@ Quizzes/Assignment Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Assignment.xml
 ### Requirements
 
 #### ⚠️ CRITICAL: Use Full QTI 1.2 Format
+
 **MUST use the complete QTI 1.2 format with `<questestinterop>` structure.**
 Simple `<quiz>` format does NOT auto-create quizzes in Canvas!
 
 See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for proper format.
 
 #### Quiz Format
+
 - **MUST total 100 points** when imported to Canvas
 - **10 questions = 10 points each** (set `points_possible` to 10 in each `<item>`)
 - **MUST use full QTI 1.2 structure** (same as vocabulary quiz)
 
 #### Required XML Structure
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2"
@@ -575,41 +659,56 @@ See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for pro
   </assessment>
 </questestinterop>
 ```
+
     <qtimetadatafield>
         <fieldlabel>qmd_timelimit</fieldlabel>
         <fieldentry>900</fieldentry>  <!-- 15 minutes -->
     </qtimetadatafield>
+
 </qtimetadata>
 ```
 
 #### Question Content
+
 - **10 questions total**
 - **1 point per question**
 - **Multiple choice format**
 - **Questions derived from lesson tasks** (walk-along, try it yourself, debug)
 
 #### Question Types
+
 1. **Code Output Prediction** (2-3 questions)
-   ```
+
+   ````
    What will this code output?
    ```python
    name = input("Name: ")
    print(type(name))
-   ```
+   ````
+
    Answer: <class 'str'>
+
+   ```
+
    ```
 
 2. **Debug Scenarios** (3-4 questions)
-   ```
+
+   ````
    This code produces a TypeError. How do you fix it?
    ```python
    age = input("Age: ")
    years_left = 100 - age
-   ```
+   ````
+
    Answer: Convert age with int(): years_left = 100 - int(age)
+
+   ```
+
    ```
 
 3. **Application Problems** (2-3 questions)
+
    ```
    You're converting weight from pounds to kg (multiply by 0.45).
    What type conversion should you use?
@@ -624,13 +723,16 @@ See `convert_quizzes_to_qti.py` script or reference Lesson 05/06 quizzes for pro
    ```
 
 #### Sports-Themed Examples
+
 - Touchdowns → points calculator
 - Yards → meters converter
 - Basketball score tracker
 - Football statistics
 
 #### Code Formatting
+
 Use `&lt;pre&gt;` for code blocks:
+
 ```xml
 <mattext texttype="text/html">&lt;p&gt;What will this code output?&lt;/p&gt;
 &lt;pre&gt;birth_year = input("Year: ")
@@ -644,12 +746,14 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
 ### GitHub Deployment
 
 1. **Copy files to Git repository** (C:\Dev\COSC1315):
+
    ```powershell
    Copy-Item "g:\My Drive\Colab Notebooks\COSC1315\Lessons\Lesson_XX_*.ipynb" "C:\Dev\COSC1315\Lessons\"
    Copy-Item "g:\My Drive\Colab Notebooks\COSC1315\Quizzes\**\Lesson_XX_*.xml" "C:\Dev\COSC1315\Quizzes\"
    ```
 
 2. **Add and commit**:
+
    ```powershell
    cd C:\Dev\COSC1315
    & "C:\Program Files\Git\bin\git.exe" add Lessons/Lesson_XX_*.ipynb
@@ -658,6 +762,7 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
    ```
 
 3. **Push to GitHub**:
+
    ```powershell
    & "C:\Program Files\Git\bin\git.exe" push
    ```
@@ -669,6 +774,7 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
 ### Canvas Deployment
 
 1. **Create Assignment**:
+
    - Assignments → + Assignment
    - Name: "Lesson XX: Topic Name"
    - Points: 100
@@ -676,12 +782,14 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
    - Description: Paste entire HTML from objectives file
 
 2. **Import Vocabulary Quiz**:
+
    - Quizzes → Options → Import Quiz
    - Upload: `Lesson_XX_Topic_Name_Vocabulary.xml`
    - Set: Available from [date], Due [date], 10 points
    - Publish
 
 3. **Import Assignment Quiz**:
+
    - Quizzes → Options → Import Quiz
    - Upload: `Lesson_XX_Topic_Name_Assignment.xml`
    - Set: Available from [date], Due [date], 10 points
@@ -691,9 +799,14 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
    - Edit assignment description
    - Add at top:
      ```html
-     <p><strong>Click here to open the lesson:</strong>
-     <a href="https://colab.research.google.com/github/R1CH4RD25/COSC1315/blob/main/Lessons/Lesson_XX_Topic_Name.ipynb">
-     Open Lesson XX in Google Colab</a></p>
+     <p>
+       <strong>Click here to open the lesson:</strong>
+       <a
+         href="https://colab.research.google.com/github/R1CH4RD25/COSC1315/blob/main/Lessons/Lesson_XX_Topic_Name.ipynb"
+       >
+         Open Lesson XX in Google Colab</a
+       >
+     </p>
      ```
 
 ---
@@ -703,6 +816,7 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
 Before considering a lesson complete, verify:
 
 ### Objectives HTML
+
 - [ ] Exactly 10 key terms
 - [ ] 5-7 objective categories
 - [ ] 12-16 specific measurable outcomes
@@ -711,6 +825,7 @@ Before considering a lesson complete, verify:
 - [ ] Last objective category: "Recognize common pitfalls"
 
 ### Lesson Notebook
+
 - [ ] Setup cell uses urllib.request (not wget)
 - [ ] All verification functions imported correctly
 - [ ] 3-4 walk-along tasks (matching Mosh video)
@@ -722,6 +837,7 @@ Before considering a lesson complete, verify:
 - [ ] Help section included
 
 ### Verification System
+
 - [ ] One function per task
 - [ ] Clear point breakdown
 - [ ] Helpful hints for failures
@@ -731,6 +847,7 @@ Before considering a lesson complete, verify:
 - [ ] File size > 20KB (comprehensive checking)
 
 ### Vocabulary Quiz
+
 - [ ] Exactly 10 questions
 - [ ] All questions test key terms from objectives
 - [ ] 4 answer choices per question
@@ -740,6 +857,7 @@ Before considering a lesson complete, verify:
 - [ ] Proper HTML encoding for code
 
 ### Assignment Quiz
+
 - [ ] Exactly 10 questions
 - [ ] Questions test practical application
 - [ ] Mix of output prediction, debugging, application
@@ -750,6 +868,7 @@ Before considering a lesson complete, verify:
 - [ ] Code blocks properly formatted
 
 ### GitHub Integration
+
 - [ ] All files pushed to GitHub
 - [ ] Colab link works (opens notebook)
 - [ ] Setup cell downloads verification file successfully
@@ -757,6 +876,7 @@ Before considering a lesson complete, verify:
 - [ ] Import functions works without errors
 
 ### Canvas Setup
+
 - [ ] Assignment created with objectives HTML
 - [ ] Colab link added to assignment
 - [ ] Vocabulary quiz imported and published
@@ -770,13 +890,13 @@ Before considering a lesson complete, verify:
 
 When finished, you should have:
 
-| Component | File Location | Deployed To | Points |
-|-----------|---------------|-------------|--------|
-| Objectives HTML | `Objectives/Lesson_XX_Topic_Name_Objectives.html` | Canvas Assignment Description | N/A |
-| Lesson Notebook | `Lessons/Lesson_XX_Topic_Name.ipynb` | GitHub → Colab | 100 |
-| Verification System | `Lessons/Verifications/lesson_XX_verification.py` | GitHub (raw URL) | N/A |
-| Vocabulary Quiz | `Quizzes/Vocabulary Quizzes - QTI - Canvas/` | Canvas Quiz | 10 |
-| Assignment Quiz | `Quizzes/Assignment Quizzes - QTI - Canvas/` | Canvas Quiz | 10 |
+| Component           | File Location                                     | Deployed To                   | Points |
+| ------------------- | ------------------------------------------------- | ----------------------------- | ------ |
+| Objectives HTML     | `Objectives/Lesson_XX_Topic_Name_Objectives.html` | Canvas Assignment Description | N/A    |
+| Lesson Notebook     | `Lessons/Lesson_XX_Topic_Name.ipynb`              | GitHub → Colab                | 100    |
+| Verification System | `Lessons/Verifications/lesson_XX_verification.py` | GitHub (raw URL)              | N/A    |
+| Vocabulary Quiz     | `Quizzes/Vocabulary Quizzes - QTI - Canvas/`      | Canvas Quiz                   | 10     |
+| Assignment Quiz     | `Quizzes/Assignment Quizzes - QTI - Canvas/`      | Canvas Quiz                   | 10     |
 
 **Total Points per Lesson:** 120 points (100 notebook + 10 vocab + 10 assignment)
 

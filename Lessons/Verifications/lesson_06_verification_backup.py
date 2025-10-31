@@ -106,7 +106,7 @@ def verify_walk_along_3():
 
 
 def verify_try_it_yourself_1():
-    """Verify Try It Yourself 1: Team Name Formatter (17 points)"""
+    """Verify Try It Yourself 1: Player Name Formatter (15 points)"""
     try:
         import __main__
         user_vars = vars(__main__)
@@ -168,7 +168,7 @@ def verify_try_it_yourself_1():
 
 
 def verify_try_it_yourself_2():
-    """Verify Try It Yourself 2: Player Stats Display (17 points)"""
+    """Verify Try It Yourself 2: Team Chant Generator (15 points)"""
     try:
         import __main__
         user_vars = vars(__main__)
@@ -235,7 +235,7 @@ def verify_try_it_yourself_2():
 
 
 def verify_try_it_yourself_3():
-    """Verify Try It Yourself 3: Score Analysis (16 points)"""
+    """Verify Try It Yourself 3: Player Stats Display (15 points)"""
     try:
         import __main__
         user_vars = vars(__main__)
@@ -449,32 +449,32 @@ def calculate_grade():
     print(f"   Subtotal: {walk_along_points}/15 points\n")
     total_points += walk_along_points
     
-    # Try It Yourself (50 points total)
-    print("🎯 Try It Yourself (50 points):")
+    # Try It Yourself (45 points total)
+    print("🎯 Try It Yourself (45 points):")
     try_it_points = 0
     
     if verify_try_it_yourself_1():
-        try_it_points += 17
+        try_it_points += 15
     if verify_try_it_yourself_2():
-        try_it_points += 17
+        try_it_points += 15
     if verify_try_it_yourself_3():
-        try_it_points += 16
+        try_it_points += 15
     
-    print(f"   Subtotal: {try_it_points}/50 points\n")
+    print(f"   Subtotal: {try_it_points}/45 points\n")
     total_points += try_it_points
     
-    # Debug Tasks (35 points total)
-    print("🐞 Debug Tasks (35 points):")
+    # Debug Tasks (40 points total)
+    print("🐞 Debug Tasks (40 points):")
     debug_points = 0
     
     if verify_debug_1():
-        debug_points += 12
+        debug_points += 15
     if verify_debug_2():
-        debug_points += 11
+        debug_points += 10
     if verify_debug_3():
-        debug_points += 12
+        debug_points += 15
     
-    print(f"   Subtotal: {debug_points}/35 points\n")
+    print(f"   Subtotal: {debug_points}/40 points\n")
     total_points += debug_points
     
     # Final Grade

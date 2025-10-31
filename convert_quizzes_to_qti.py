@@ -11,7 +11,7 @@ from html import escape
 def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, time_limit=600):
     """
     Convert simple quiz XML to full QTI 1.2 format
-    
+
     Args:
         simple_xml_path: Path to the simple format quiz.xml
         lesson_num: Lesson number (e.g., "07", "09", "10")
@@ -19,16 +19,16 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
         quiz_type: Either "vocabulary" or "assignment"
         time_limit: Time limit in seconds (600 for vocab, 900 for assignment)
     """
-    
+
     # Parse the simple format XML
     tree = ET.parse(simple_xml_path)
     root = tree.getroot()
-    
+
     # Extract questions
     questions = []
     for question_elem in root.findall('question'):
         question_text = question_elem.find('questiontext/text').text
-        
+
         answers = []
         correct_answer = None
         for idx, answer_elem in enumerate(question_elem.findall('answer')):
@@ -42,25 +42,25 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
             })
             if fraction == '100':
                 correct_answer = label
-        
+
         questions.append({
             'text': question_text,
             'answers': answers,
             'correct': correct_answer
         })
-    
+
     # Build QTI XML
     qti_xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
     qti_xml += '<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" '
     qti_xml += 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
     qti_xml += 'xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 '
     qti_xml += 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">\n'
-    
+
     # Assessment header
     quiz_title = f"Lesson {lesson_num}: {topic_name} - {quiz_type.title()} Quiz"
     ident = f"lesson_{lesson_num}_{quiz_type}_quiz"
     qti_xml += f'  <assessment ident="{ident}" title="{quiz_title}">\n'
-    
+
     # Metadata
     qti_xml += '    <qtimetadata>\n'
     qti_xml += '      <qtimetadatafield>\n'
@@ -76,15 +76,15 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
     qti_xml += f'        <fieldentry>{time_limit}</fieldentry>\n'
     qti_xml += '      </qtimetadatafield>\n'
     qti_xml += '    </qtimetadata>\n'
-    
+
     # Section start
     qti_xml += '    <section ident="root_section">\n\n'
-    
+
     # Add each question
     for idx, q in enumerate(questions, 1):
         qti_xml += f'      <!-- Question {idx} -->\n'
         qti_xml += f'      <item ident="q{idx}" title="Question {idx}">\n'
-        
+
         # Item metadata
         qti_xml += '        <itemmetadata>\n'
         qti_xml += '          <qtimetadata>\n'
@@ -98,7 +98,7 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
         qti_xml += '            </qtimetadatafield>\n'
         qti_xml += '          </qtimetadata>\n'
         qti_xml += '        </itemmetadata>\n'
-        
+
         # Presentation
         qti_xml += '        <presentation>\n'
         qti_xml += '          <material>\n'
@@ -108,7 +108,7 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
         qti_xml += '          </material>\n'
         qti_xml += '          <response_lid ident="response1" rcardinality="Single">\n'
         qti_xml += '            <render_choice>\n'
-        
+
         # Add answer choices
         for answer in q['answers']:
             qti_xml += f'              <response_label ident="{answer["label"]}">\n'
@@ -116,11 +116,11 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
             qti_xml += f'                  <mattext texttype="text/plain">{escape(answer["text"])}</mattext>\n'
             qti_xml += '                </material>\n'
             qti_xml += '              </response_label>\n'
-        
+
         qti_xml += '            </render_choice>\n'
         qti_xml += '          </response_lid>\n'
         qti_xml += '        </presentation>\n'
-        
+
         # Response processing (correct answer)
         qti_xml += '        <resprocessing>\n'
         qti_xml += '          <outcomes>\n'
@@ -133,22 +133,22 @@ def convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, ti
         qti_xml += '            <setvar action="Set" varname="SCORE">100</setvar>\n'
         qti_xml += '          </respcondition>\n'
         qti_xml += '        </resprocessing>\n'
-        
+
         qti_xml += '      </item>\n\n'
-    
+
     # Close section and assessment
     qti_xml += '    </section>\n'
     qti_xml += '  </assessment>\n'
     qti_xml += '</questestinterop>\n'
-    
+
     return qti_xml
 
 
 def create_imsmanifest():
     """Create the imsmanifest.xml file required by Canvas"""
     manifest = '''<?xml version="1.0" encoding="UTF-8"?>
-<manifest identifier="quiz_export" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<manifest identifier="quiz_export" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd">
   <metadata>
     <schema>QTI Package</schema>
@@ -167,13 +167,13 @@ def create_imsmanifest():
 def process_quiz(lesson_num, topic_name, quiz_type):
     """Process a single quiz file"""
     print(f"\nProcessing Lesson {lesson_num} {quiz_type.title()} Quiz...")
-    
+
     # Determine directories
     if quiz_type == "vocabulary":
         quiz_dir = "Quizzes/Vocabulary Quizzes - QTI - Canvas"
     else:
         quiz_dir = "Quizzes/Assignment Quizzes - QTI - Canvas"
-    
+
     # File names
     if quiz_type == "vocabulary":
         topic_slug = topic_name.replace(" ", "_")
@@ -181,39 +181,39 @@ def process_quiz(lesson_num, topic_name, quiz_type):
     else:
         topic_slug = topic_name.replace(" ", "_")
         zip_filename = f"Lesson_{lesson_num}_{topic_slug}_Assignment.zip"
-    
+
     zip_path = os.path.join(quiz_dir, zip_filename)
-    
+
     # Extract existing zip
     temp_dir = f"temp_{lesson_num}_{quiz_type}"
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
         zip_ref.extractall(os.path.join(quiz_dir, temp_dir))
-    
+
     simple_xml_path = os.path.join(quiz_dir, temp_dir, "quiz.xml")
-    
+
     # Convert to QTI format
     time_limit = 600 if quiz_type == "vocabulary" else 900
     qti_xml = convert_simple_to_qti(simple_xml_path, lesson_num, topic_name, quiz_type, time_limit)
-    
+
     # Write new quiz.xml
     with open(simple_xml_path, 'w', encoding='utf-8') as f:
         f.write(qti_xml)
-    
+
     # Create imsmanifest.xml
     manifest_path = os.path.join(quiz_dir, temp_dir, "imsmanifest.xml")
     with open(manifest_path, 'w', encoding='utf-8') as f:
         f.write(create_imsmanifest())
-    
+
     # Repackage as zip
     os.remove(zip_path)
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zip_ref:
         zip_ref.write(manifest_path, "imsmanifest.xml")
         zip_ref.write(simple_xml_path, "quiz.xml")
-    
+
     # Cleanup temp directory
     import shutil
     shutil.rmtree(os.path.join(quiz_dir, temp_dir))
-    
+
     print(f"✓ Created {zip_filename}")
 
 
@@ -227,8 +227,8 @@ if __name__ == "__main__":
         ("10", "Logical_Operators", "vocabulary"),
         ("10", "Logical_Operators", "assignment"),
     ]
-    
+
     for lesson_num, topic_name, quiz_type in quizzes_to_convert:
         process_quiz(lesson_num, topic_name, quiz_type)
-    
+
     print("\n✅ All quizzes converted to QTI 1.2 format!")

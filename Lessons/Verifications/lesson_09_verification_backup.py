@@ -145,7 +145,7 @@ def verify_try_it_1():
 
         # Check output
         if "Team made the playoffs!" in output:
-            points_earned['try_it_1'] = 17
+            points_earned['try_it_1'] = 15
             print("✅ Try It Yourself 1 Complete! (+15 points)")
             print("🏀 Great work! The team made it to the playoffs!")
         else:
@@ -193,7 +193,7 @@ def verify_try_it_2():
 
         # Check output
         if "Great game!" in output:
-            points_earned['try_it_2'] = 17
+            points_earned['try_it_2'] = 20
             print("✅ Try It Yourself 2 Complete! (+20 points)")
             print("🏈 Excellent! Your performance rating system works!")
         else:
@@ -240,7 +240,7 @@ def verify_try_it_3():
 
         # Check output
         if "Team A wins the championship!" in output:
-            points_earned['try_it_3'] = 16
+            points_earned['try_it_3'] = 15
             print("✅ Try It Yourself 3 Complete! (+15 points)")
             print("🏆 Team A is the champion! Your logic is perfect!")
         else:
@@ -270,8 +270,8 @@ def verify_debug_1():
 
         # Check output
         if "You can get a driver's license!" in output:
-            points_earned['debug_1'] = 12
-            print("✅ Debug Challenge 1 Fixed! (+12 points)")
+            points_earned['debug_1'] = 15
+            print("✅ Debug Challenge 1 Fixed! (+15 points)")
             print("Great debugging! You added the missing colon.")
         else:
             print("❌ Still has issues. Check for the colon after the if statement.")
@@ -300,7 +300,7 @@ def verify_debug_2():
 
         # Check output
         if "Perfect score!" in output:
-            points_earned['debug_2'] = 12
+            points_earned['debug_2'] = 15
             print("✅ Debug Challenge 2 Fixed! (+15 points)")
             print("Excellent! You used == for comparison, not =")
         else:
@@ -329,7 +329,7 @@ def verify_debug_3():
 
         # Check output
         if "That's Michael Jordan's number!" in output:
-            points_earned['debug_3'] = 11
+            points_earned['debug_3'] = 10
             print("✅ Debug Challenge 3 Fixed! (+10 points)")
             print("Perfect! You fixed the indentation.")
         else:
@@ -356,14 +356,14 @@ def calculate_grade():
     print(f"   Walk-Along 3: {points_earned['walk_along_3']}/5 points")
 
     print("\n🏀 TRY IT YOURSELF:")
-    print(f"   Exercise 1 (Playoff Eligibility): {points_earned['try_it_1']}/17 points")
-    print(f"   Exercise 2 (Performance Rating): {points_earned['try_it_2']}/17 points")
-    print(f"   Exercise 3 (Championship Winner): {points_earned['try_it_3']}/16 points")
+    print(f"   Exercise 1 (Playoff Eligibility): {points_earned['try_it_1']}/15 points")
+    print(f"   Exercise 2 (Performance Rating): {points_earned['try_it_2']}/20 points")
+    print(f"   Exercise 3 (Championship Winner): {points_earned['try_it_3']}/15 points")
 
     print("\n🐛 DEBUG CHALLENGES:")
-    print(f"   Challenge 1 (Missing Colon): {points_earned['debug_1']}/12 points")
-    print(f"   Challenge 2 (Wrong Operator): {points_earned['debug_2']}/12 points")
-    print(f"   Challenge 3 (Indentation): {points_earned['debug_3']}/11 points")
+    print(f"   Challenge 1 (Missing Colon): {points_earned['debug_1']}/15 points")
+    print(f"   Challenge 2 (Wrong Operator): {points_earned['debug_2']}/15 points")
+    print(f"   Challenge 3 (Indentation): {points_earned['debug_3']}/10 points")
 
     print("\n" + "="*50)
     print(f"   TOTAL: {total_points}/{max_points} points ({percentage:.1f}%)")

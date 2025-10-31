@@ -409,16 +409,16 @@ def calculate_grade():
     total_points = 0
     max_points = 100
 
-    # Walk-Along Tasks (15 points total)
-    print("📺 Walk-Along Tasks (15 points):")
+    # Walk-Along Tasks (10 points total)
+    print("📺 Walk-Along Tasks (10 points):")
     walk_along_points = 0
 
     if verify_walk_along_1():
-        walk_along_points += 8
+        walk_along_points += 5
     if verify_walk_along_2():
-        walk_along_points += 7
+        walk_along_points += 5
 
-    print(f"   Subtotal: {walk_along_points}/15 points\n")
+    print(f"   Subtotal: {walk_along_points}/10 points\n")
     total_points += walk_along_points
 
     # Try It Yourself (50 points total)
@@ -426,25 +426,25 @@ def calculate_grade():
     try_it_points = 0
 
     if verify_try_it_yourself_1():
-        try_it_points += 17
+        try_it_points += 15
     if verify_try_it_yourself_2():
-        try_it_points += 17
+        try_it_points += 15
     if verify_try_it_yourself_3():
-        try_it_points += 16
+        try_it_points += 20
 
     print(f"   Subtotal: {try_it_points}/50 points\n")
     total_points += try_it_points
 
-    # Debug Tasks (35 points total)
-    print("🐞 Debug Tasks (35 points):")
+    # Debug Tasks (40 points total)
+    print("🐞 Debug Tasks (40 points):")
     debug_points = 0
 
     if verify_debug_1():
-        debug_points += 12
+        debug_points += 15
     if verify_debug_2():
-        debug_points += 12
+        debug_points += 10
     if verify_debug_3():
-        debug_points += 11
+        debug_points += 15
 
     print(f"   Subtotal: {debug_points}/40 points\n")
     total_points += debug_points

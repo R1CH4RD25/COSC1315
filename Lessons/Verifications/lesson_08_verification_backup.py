@@ -6,9 +6,9 @@ This module provides automated verification for student code in the Arithmetic O
 
 Grading Breakdown:
 - Walk-Along Tasks: 15 points (4 tasks: 4 + 3 + 4 + 4 points)
-- Try It Yourself: 50 points (17 + 17 + 16)
-- Debug Exercises: 35 points (12 + 12 + 11)
-Total: 100 points
+- Try It Yourself: 50 points (15 + 20 + 15)
+- Debug Exercises: 40 points (15 + 15 + 10)
+Total: 105 points
 """
 
 import ast
@@ -546,7 +546,7 @@ def verify_debug_1():
     user_ns = _get_user_namespace()
     code = _get_previous_cell_code()
     points = 0
-    max_points = 12
+    max_points = 15
     feedback = []
     
     # Component 1: total_players (3 pts)
@@ -604,7 +604,7 @@ def verify_debug_2():
     user_ns = _get_user_namespace()
     code = _get_previous_cell_code()
     points = 0
-    max_points = 12
+    max_points = 15
     feedback = []
     
     # Component 1: Required variables (3 pts)
@@ -653,7 +653,7 @@ def verify_debug_3():
     user_ns = _get_user_namespace()
     code = _get_previous_cell_code()
     points = 0
-    max_points = 11
+    max_points = 10
     feedback = []
     
     # Component 1: score exists (3 pts)
@@ -697,7 +697,7 @@ def calculate_grade():
     debug_total = sum(_debug_results.values())
     
     total_points = walk_along_total + try_it_yourself_total + debug_total
-    max_points = 100  # 15 + 50 + 40 + 5 bonus
+    max_points = 105  # 15 + 50 + 40 + 5 bonus
     
     # Calculate percentage
     percentage = (total_points / max_points) * 100
@@ -726,7 +726,7 @@ def calculate_grade():
     print(f"\\n📊 SCORING BREAKDOWN:\\n")
     print(f"  Walk-Along Tasks:     {walk_along_total:>3}/15 points")
     print(f"  Try It Yourself:      {try_it_yourself_total:>3}/50 points")
-    print(f"  Debug Challenges:     {debug_total:>3}/35 points")
+    print(f"  Debug Challenges:     {debug_total:>3}/40 points")
     print(f"  {'-'*40}")
     print(f"  TOTAL SCORE:          {total_points:>3}/{max_points} points")
     print(f"\\n  Percentage:           {percentage:.1f}%")
