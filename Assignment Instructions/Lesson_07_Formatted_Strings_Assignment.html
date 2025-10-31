@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 07: Formatted Strings - Assignment Instructions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        li p {
+            margin: 5px 0;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .note {
+            background-color: #fff3cd;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lesson 07 — Formatted Strings</h1>
+        
+        <h2><strong>Assignment Instructions</strong></h2>
+        <p>For this activity, you will:</p>
+        <ul>
+            <li>
+                <p>Open a new notebook in <strong>Google Colab</strong> and give it a title that reflects <strong>Lesson 07 — Formatted Strings</strong>.</p>
+            </li>
+            <li>
+                <p>Create variables for a player's information (name, team, points, rebounds, assists) and use an <strong>f-string</strong> to display them in a formatted sentence (e.g., <code>f"{player} scored {points} points for the {team}."</code>).</p>
+            </li>
+            <li>
+                <p>Practice <strong>concatenation</strong> by combining strings with the <code>+</code> operator to build a full sentence from multiple variables, then compare it to using an f-string for the same output.</p>
+            </li>
+            <li>
+                <p>Use f-strings to create a <strong>player stat card</strong> that displays multiple statistics in an organized format with labels (e.g., "Name: Stephen Curry | Team: Warriors | PPG: 30.1").</p>
+            </li>
+            <li>
+                <p>Embed <strong>expressions</strong> inside f-strings by performing calculations directly within the curly braces (e.g., <code>f"Field Goal Percentage: {made / attempts * 100:.1f}%"</code>).</p>
+            </li>
+            <li>
+                <p>Use f-string <strong>formatting options</strong> to control decimal places for floating-point numbers (e.g., <code>{value:.2f}</code> for 2 decimal places).</p>
+            </li>
+            <li>
+                <p>Create a sports report template using a multi-line f-string with triple quotes that incorporates multiple variables and calculations.</p>
+            </li>
+            <li>
+                <p>Save and submit your completed notebook through <strong>Google Classroom</strong> when finished.</p>
+            </li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 F-String Tips:</strong>
+            <ul style="margin: 10px 0;">
+                <li>Always start with <code>f</code> before the opening quote: <code>f"..."</code></li>
+                <li>Put variables and expressions inside curly braces: <code>{variable}</code></li>
+                <li>Format numbers with <code>:.2f</code> for 2 decimals, <code>:.1f</code> for 1 decimal</li>
+                <li>You can do math inside the braces: <code>{points + rebounds + assists}</code></li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>🏀 Example Output:</strong>
+            <p style="margin: 10px 0; font-family: 'Courier New', monospace; background: #f8f9fa; padding: 10px; border-radius: 5px;">
+                Player: LeBron James<br>
+                Team: Los Angeles Lakers<br>
+                Stats: 25.7 PPG | 7.3 RPG | 7.3 APG<br>
+                Total Impact: 40.3 combined stats
+            </p>
+        </div>
+    </div>
+</body>
+</html>
