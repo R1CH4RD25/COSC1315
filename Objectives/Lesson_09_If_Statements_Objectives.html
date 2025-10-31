@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 09: If Statements - Learning Objectives</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 20px;
+        }
+        .objective {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+        }
+        .objective strong {
+            color: #2c3e50;
+        }
+        .objective ul {
+            margin-top: 8px;
+        }
+        .key-term {
+            background-color: #e8f8f5;
+            padding: 12px;
+            margin: 8px 0;
+            border-left: 4px solid #16a085;
+            border-radius: 5px;
+        }
+        .term-name {
+            font-weight: bold;
+            color: #16a085;
+            font-size: 1.05em;
+        }
+        .term-definition {
+            margin-top: 5px;
+            color: #2c3e50;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        .note {
+            background-color: #fff3cd;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lesson 09: If Statements</h1>
+        <p><strong>Video:</strong> 58:16-1:06:24 | <strong>Duration:</strong> ~8 minutes</p>
+
+        <h2>📚 Learning Objectives</h2>
+        <p>By the end of this lesson, students will be able to:</p>
+
+        <div class="objective">
+            <strong>1. Understand conditional logic and decision-making in programs</strong>
+            <ul>
+                <li>Explain how programs make decisions using conditions</li>
+                <li>Recognize that <code>if</code> statements allow code to execute only when certain conditions are true</li>
+                <li>Understand that conditional logic is fundamental to creating interactive and responsive programs</li>
+                <li>Apply decision-making concepts to sports scenarios (eligibility checks, scoring conditions, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>2. Write basic if statements with proper syntax</strong>
+            <ul>
+                <li>Use the correct <code>if</code> statement syntax: <code>if condition:</code></li>
+                <li>Remember to include the colon (<code>:</code>) at the end of the <code>if</code> line</li>
+                <li>Properly indent code blocks that should execute when the condition is true</li>
+                <li>Understand that Python uses indentation (4 spaces) to define code blocks, not curly braces</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>3. Use comparison operators to create conditions</strong>
+            <ul>
+                <li>Use <code>></code> (greater than), <code><</code> (less than), <code>>=</code> (greater than or equal), <code><=</code> (less than or equal)</li>
+                <li>Use <code>==</code> (equal to) and <code>!=</code> (not equal to) for equality comparisons</li>
+                <li>Understand the difference between <code>=</code> (assignment) and <code>==</code> (comparison)</li>
+                <li>Apply comparison operators to sports data (scores, stats, rankings)</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>4. Implement if-else statements for alternative paths</strong>
+            <ul>
+                <li>Use <code>else</code> to specify code that runs when the <code>if</code> condition is false</li>
+                <li>Understand that <code>else</code> provides a default action or alternative path</li>
+                <li>Properly structure <code>if-else</code> blocks with correct indentation</li>
+                <li>Create programs that respond differently based on user input or calculated values</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>5. Use elif for multiple conditions</strong>
+            <ul>
+                <li>Use <code>elif</code> (else if) to check multiple conditions in sequence</li>
+                <li>Understand that <code>elif</code> allows testing multiple scenarios without nested <code>if</code> statements</li>
+                <li>Recognize that only the first true condition in an <code>if-elif-else</code> chain executes</li>
+                <li>Apply <code>elif</code> to categorize data (grade ranges, performance tiers, championship brackets)</li>
+            </ul>
+        </div>
+
+        <div class="objective">
+            <strong>6. Debug common if statement errors</strong>
+            <ul>
+                <li>Identify and fix missing colons after <code>if</code>, <code>elif</code>, or <code>else</code></li>
+                <li>Correct indentation errors that cause code to run outside the conditional block</li>
+                <li>Fix incorrect comparison operators (using <code>=</code> instead of <code>==</code>)</li>
+                <li>Recognize logic errors where conditions are in the wrong order</li>
+            </ul>
+        </div>
+
+        <h2>🔑 Key Terms</h2>
+
+        <div class="key-term">
+            <div class="term-name">If Statement</div>
+            <div class="term-definition">A control structure that executes a block of code only if a specified condition is true (e.g., <code>if score > 100: print("High score!")</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Condition</div>
+            <div class="term-definition">An expression that evaluates to either <code>True</code> or <code>False</code>, used to determine whether code inside an <code>if</code> statement should execute.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Comparison Operator</div>
+            <div class="term-definition">Symbols used to compare values: <code>></code>, <code><</code>, <code>>=</code>, <code><=</code>, <code>==</code> (equal), <code>!=</code> (not equal).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Indentation</div>
+            <div class="term-definition">Spaces at the beginning of a line that define code blocks in Python. Code inside an <code>if</code> statement must be indented (typically 4 spaces).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Else Statement</div>
+            <div class="term-definition">A clause that provides an alternative block of code to execute when the <code>if</code> condition is false (e.g., <code>else: print("Low score")</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Elif Statement</div>
+            <div class="term-definition">Short for "else if," it allows checking multiple conditions in sequence. Only the first true condition executes (e.g., <code>elif score > 50:</code>).</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Boolean Expression</div>
+            <div class="term-definition">An expression that evaluates to <code>True</code> or <code>False</code>. Conditions in <code>if</code> statements are boolean expressions.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Code Block</div>
+            <div class="term-definition">A group of statements that are executed together, defined by indentation in Python. The indented lines after an <code>if</code> statement form a code block.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Control Flow</div>
+            <div class="term-definition">The order in which statements are executed in a program. <code>If</code> statements allow you to control which code runs based on conditions.</div>
+        </div>
+
+        <div class="key-term">
+            <div class="term-name">Nested If Statement</div>
+            <div class="term-definition">An <code>if</code> statement placed inside another <code>if</code> statement, allowing for more complex conditional logic with multiple levels of decision-making.</div>
+        </div>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> The most common mistake beginners make with <code>if</code> statements is forgetting the colon (<code>:</code>) at the end or using incorrect indentation. Remember: <code>if condition:</code> always needs a colon, and the code that runs when true must be indented!
+        </div>
+
+        <div class="note">
+            <strong>🏀 Sports Connection:</strong> <code>If</code> statements are like a referee making calls during a game! "If the ball goes out of bounds, give possession to the other team. Else if a foul occurs, award free throws. Else, play continues." Your code makes decisions just like game rules do!
+        </div>
+    </div>
+</body>
+</html>
