@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="quiz_export" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd">
+  <metadata>
+    <schema>QTI Package</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <resources>
+    <resource identifier="quiz_resource" type="imsqti_xmlv1p2">
+      <file href="quiz.xml"/>
+    </resource>
+  </resources>
+</manifest>
