@@ -9,16 +9,27 @@
 
 ## ⚠️ CRITICAL REQUIREMENTS
 
+### Point Values - ALL ASSIGNMENTS MUST EQUAL 100 POINTS
+**Every Canvas assignment/lesson component MUST total exactly 100 points.**
+
+- **Vocabulary Quiz:** 100 points (10 questions × 10 points each)
+- **Assignment Quiz:** 100 points (10 questions × 10 points each)
+- **Lesson Notebook Assignment:** 100 points total
+  - Walk-Along Exercises: ~15 points
+  - Try It Yourself: ~50 points
+  - Debug Challenges: ~35 points
+  - *(Adjust exercise counts/points as needed, but MUST total 100)*
+
 ### Quiz Format
 **ALL quizzes MUST use full QTI 1.2 format** (`<questestinterop>` structure).
 - ❌ Simple `<quiz>` format does NOT auto-create quizzes in Canvas
 - ✅ Use `convert_quizzes_to_qti.py` script to convert simple format to QTI 1.2
 - ✅ Reference Lessons 05-10 quizzes for proper format examples
+- ✅ Replace `&#x27;` HTML entities with regular apostrophes `'`
 
-### Point Values
-- Each quiz MUST total **100 points**
-- 10 questions × 10 points each = 100 points
-- Set `<fieldentry>10</fieldentry>` for `points_possible` in each question
+### HTML Requirements
+- ❌ NO container `<div>` wrappers in Objectives or Assignment Instructions HTML
+- ✅ Start directly with `<h1>` tag after `<body>`
 
 ---
 
@@ -211,7 +222,12 @@ print('✅ Setup complete! You\'re ready to start coding.')
 
 **Instructions:** Follow along with the Code with Mosh video. Type the code yourself in each cell below.
 
-**Total Points:** XX points (X points per task)
+**Total Points:** ~15 points (adjust as needed to reach 100 total)
+
+**Note:** Entire notebook assignment must equal **100 points total**
+- Walk-Along: ~15 points
+- Try It Yourself: ~50 points
+- Debug Challenges: ~35 points
 
 ---
 ```
