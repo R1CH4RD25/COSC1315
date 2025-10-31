@@ -1,7 +1,7 @@
 # Complete Lesson Creation Workflow
 
-**Purpose:** Step-by-step process for creating complete lesson packages for COSC 1315  
-**Created:** October 30, 2025  
+**Purpose:** Step-by-step process for creating complete lesson packages for COSC 1315
+**Created:** October 30, 2025
 **Status:** Established after Lesson 5 completion
 
 ---
@@ -125,7 +125,7 @@ Lessons/Lesson_XX_Topic_Name.ipynb
 #### **Cell 2: Watch Section**
 ```markdown
 ## 🎥 Watch
-**Clip:** MM:SS–MM:SS  
+**Clip:** MM:SS–MM:SS
 **Video:** [Code with Mosh - Python for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=XXXXs)
 
 **Focus:** Brief description of what Mosh teaches in this segment.
@@ -305,7 +305,7 @@ def verify_walk_along_1():
     points = 0
     max_points = 5
     feedback = []
-    
+
     # Check component 1
     if 'variable_name' in user_ns:
         points += 2
@@ -313,9 +313,9 @@ def verify_walk_along_1():
     else:
         feedback.append("❌ Variable not found (0 pts)")
         feedback.append("💡 Hint: Create a variable named 'variable_name'")
-    
+
     # [More checks...]
-    
+
     # Display results
     print(f"\n{'='*50}")
     print(f"Walk-Along Task 1: Task Name")
@@ -324,7 +324,7 @@ def verify_walk_along_1():
         print(line)
     print(f"\n🎯 Score: {points}/{max_points} points")
     print(f"{'='*50}\n")
-    
+
     return points, max_points
 ```
 
@@ -346,6 +346,11 @@ Quizzes/Vocabulary Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Vocabulary.xml
 ```
 
 ### Requirements
+
+#### Quiz Format
+- **MUST total 100 points** when imported to Canvas
+- **10 questions = 10 points each** (Canvas auto-assigns equal points)
+- **Must include title attribute:** `<quiz title="Lesson XX - Topic Name Vocabulary Quiz">`
 
 #### Quiz Settings
 ```xml
@@ -448,6 +453,11 @@ Quizzes/Assignment Quizzes - QTI - Canvas/Lesson_XX_Topic_Name_Assignment.xml
 ```
 
 ### Requirements
+
+#### Quiz Format
+- **MUST total 100 points** when imported to Canvas
+- **10 questions = 10 points each** (Canvas auto-assigns equal points)
+- **Must include title attribute:** `<quiz title="Lesson XX - Topic Name Assignment Quiz">`
 
 #### Quiz Settings
 ```xml
@@ -572,7 +582,7 @@ print(type(birth_year))&lt;/pre&gt;</mattext>
    - Edit assignment description
    - Add at top:
      ```html
-     <p><strong>Click here to open the lesson:</strong> 
+     <p><strong>Click here to open the lesson:</strong>
      <a href="https://colab.research.google.com/github/R1CH4RD25/COSC1315/blob/main/Lessons/Lesson_XX_Topic_Name.ipynb">
      Open Lesson XX in Google Colab</a></p>
      ```
@@ -715,6 +725,6 @@ When finished, you should have:
 
 ---
 
-**Status:** Established workflow based on Lesson 5 success  
-**Last Updated:** October 30, 2025  
+**Status:** Established workflow based on Lesson 5 success
+**Last Updated:** October 30, 2025
 **Repository:** https://github.com/R1CH4RD25/COSC1315
