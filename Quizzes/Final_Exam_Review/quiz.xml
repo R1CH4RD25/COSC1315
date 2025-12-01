@@ -33,7 +33,7 @@
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What is the purpose of the <code>print()</code> function in Python?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What is the purpose of the &lt;code&gt;print()&lt;/code&gt; function in Python?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -90,7 +90,7 @@
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;Which code will successfully print the text: <code>It's Friday</code>?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;Which code will successfully print the text: &lt;code&gt;It&#x27;s Friday&lt;/code&gt;?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -204,7 +204,7 @@
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What error will occur when running this code: <code>Print("Hello")</code>?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What error will occur when running this code: &lt;code&gt;Print(&quot;Hello&quot;)&lt;/code&gt;?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -261,7 +261,7 @@
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will be the output of this code: <code>print("Python")</code>?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will be the output of this code: &lt;code&gt;print(&quot;Python&quot;)&lt;/code&gt;?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -432,8 +432,8 @@
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will be the output of this code?<br><pre>print("Hello")
-print("World")</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will be the output of this code?&lt;br&gt;&lt;pre&gt;print(&quot;Hello&quot;)
+print(&quot;World&quot;)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -718,9 +718,9 @@ print("World")</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will be printed by this code?<br><pre>x = 5
+            <mattext texttype="text/html">&lt;p&gt;What will be printed by this code?&lt;br&gt;&lt;pre&gt;x = 5
 x = 10
-print(x)</pre>&lt;/p&gt;</mattext>
+print(x)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -777,7 +777,7 @@ print(x)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What data type is <code>3.14</code>?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What data type is &lt;code&gt;3.14&lt;/code&gt;?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -891,7 +891,7 @@ print(x)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does the <code>input()</code> function do?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does the &lt;code&gt;input()&lt;/code&gt; function do?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -948,7 +948,7 @@ print(x)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What data type does <code>input()</code> always return?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What data type does &lt;code&gt;input()&lt;/code&gt; always return?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1062,8 +1062,8 @@ print(x)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will be displayed if the user types "Sarah"?<br><pre>name = input("Name? ")
-print("Welcome " + name + "!")</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will be displayed if the user types &quot;Sarah&quot;?&lt;br&gt;&lt;pre&gt;name = input(&quot;Name? &quot;)
+print(&quot;Welcome &quot; + name + &quot;!&quot;)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1177,7 +1177,7 @@ print("Welcome " + name + "!")</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What data type does the <code>input()</code> function ALWAYS return in Python?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What data type does the &lt;code&gt;input()&lt;/code&gt; function ALWAYS return in Python?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1234,7 +1234,7 @@ print("Welcome " + name + "!")</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does the <code>int()</code> function do?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does the &lt;code&gt;int()&lt;/code&gt; function do?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1291,8 +1291,8 @@ print("Welcome " + name + "!")</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will this code output?<br><pre>birth_year = input("Birth year: ")
-print(type(birth_year))</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will this code output?&lt;br&gt;&lt;pre&gt;birth_year = input(&quot;Birth year: &quot;)
+print(type(birth_year))&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1349,9 +1349,9 @@ print(type(birth_year))</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;This code produces a TypeError. How do you fix it?<br><pre>birth_year = input("Birth year: ")
+            <mattext texttype="text/html">&lt;p&gt;This code produces a TypeError. How do you fix it?&lt;br&gt;&lt;pre&gt;birth_year = input(&quot;Birth year: &quot;)
 age = 2024 - birth_year
-print(age)</pre>&lt;/p&gt;</mattext>
+print(age)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1465,7 +1465,7 @@ print(age)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does <code>int(3.7)</code> return?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does &lt;code&gt;int(3.7)&lt;/code&gt; return?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1693,8 +1693,8 @@ print(age)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does this code print?<br><pre>name = "python"
-print(name.upper())</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does this code print?&lt;br&gt;&lt;pre&gt;name = &quot;python&quot;
+print(name.upper())&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1751,8 +1751,8 @@ print(name.upper())</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does this code print?<br><pre>team = "FOOTBALL"
-print(team[4:8])</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does this code print?&lt;br&gt;&lt;pre&gt;team = &quot;FOOTBALL&quot;
+print(team[4:8])&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1809,8 +1809,8 @@ print(team[4:8])</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does this code print?<br><pre>word = "TOUCHDOWN"
-print(word[-3])</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does this code print?&lt;br&gt;&lt;pre&gt;word = &quot;TOUCHDOWN&quot;
+print(word[-3])&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1924,8 +1924,8 @@ print(word[-3])</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;This code has an error. What's the correct way to capitalize the first letter of "john" to "John"?<br><pre>name = "john"
-name[0] = "J"  # Error!</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;This code has an error. What&#x27;s the correct way to capitalize the first letter of &quot;john&quot; to &quot;John&quot;?&lt;br&gt;&lt;pre&gt;name = &quot;john&quot;
+name[0] = &quot;J&quot;  # Error!&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -1982,8 +1982,8 @@ name[0] = "J"  # Error!</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What does this code print?<br><pre>message = "Python Programming"
-print(message.find("Pro"))</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What does this code print?&lt;br&gt;&lt;pre&gt;message = &quot;Python Programming&quot;
+print(message.find(&quot;Pro&quot;))&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2154,7 +2154,7 @@ print(message.find("Pro"))</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;Which code correctly creates an f-string to display a player's name and jersey number?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;Which code correctly creates an f-string to display a player&#x27;s name and jersey number?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2211,8 +2211,8 @@ print(message.find("Pro"))</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will this code output?<br><pre>name = "LEBRON"
-print(name.lower())</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will this code output?&lt;br&gt;&lt;pre&gt;name = &quot;LEBRON&quot;
+print(name.lower())&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2269,8 +2269,8 @@ print(name.lower())</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will this code output?<br><pre>title = "nba finals"
-print(title.title())</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will this code output?&lt;br&gt;&lt;pre&gt;title = &quot;nba finals&quot;
+print(title.title())&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2384,9 +2384,9 @@ print(title.title())</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What is wrong with this code?<br><pre>player = "Durant"
-position = "Forward"
-print("Player {player} plays {position}")</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What is wrong with this code?&lt;br&gt;&lt;pre&gt;player = &quot;Durant&quot;
+position = &quot;Forward&quot;
+print(&quot;Player {player} plays {position}&quot;)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2443,9 +2443,9 @@ print("Player {player} plays {position}")</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will this code output?<br><pre>text = "basketball"
-result = text.find("ball")
-print(result)</pre>&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;What will this code output?&lt;br&gt;&lt;pre&gt;text = &quot;basketball&quot;
+result = text.find(&quot;ball&quot;)
+print(result)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2502,7 +2502,7 @@ print(result)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;Which code correctly replaces "win" with "victory" in the message?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;Which code correctly replaces &quot;win&quot; with &quot;victory&quot; in the message?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2673,10 +2673,10 @@ print(result)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What is the correct complete code to get a user's age and calculate birth year?<br><pre># User enters 20
+            <mattext texttype="text/html">&lt;p&gt;What is the correct complete code to get a user&#x27;s age and calculate birth year?&lt;br&gt;&lt;pre&gt;# User enters 20
 age = ?
 birth_year = 2024 - age
-print(birth_year)</pre>&lt;/p&gt;</mattext>
+print(birth_year)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2733,9 +2733,9 @@ print(birth_year)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;What will this code display?<br><pre>name = "  john  "
+            <mattext texttype="text/html">&lt;p&gt;What will this code display?&lt;br&gt;&lt;pre&gt;name = &quot;  john  &quot;
 clean = name.strip().title()
-print("Hello " + clean)</pre>&lt;/p&gt;</mattext>
+print(&quot;Hello &quot; + clean)&lt;/pre&gt;&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
@@ -2849,7 +2849,7 @@ print("Hello " + clean)</pre>&lt;/p&gt;</mattext>
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;Which is the BEST way to display "Score: 95" where score is a variable?&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;Which is the BEST way to display &quot;Score: 95&quot; where score is a variable?&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>

@@ -568,8 +568,17 @@ def create_final_exam_xml():
     return xml_content
 
 
+def escape_html(text):
+    """Escape HTML entities for XML"""
+    import html
+    return html.escape(text)
+
+
 def create_question(num, title, question_text, choices, correct):
     """Create a single question in QTI format"""
+    
+    # Escape the question text for proper XML encoding
+    escaped_question = escape_html(question_text)
     
     question = f'''
       <!-- Question {num}: {title} -->
@@ -588,7 +597,7 @@ def create_question(num, title, question_text, choices, correct):
         </itemmetadata>
         <presentation>
           <material>
-            <mattext texttype="text/html">&lt;p&gt;{question_text}&lt;/p&gt;</mattext>
+            <mattext texttype="text/html">&lt;p&gt;{escaped_question}&lt;/p&gt;</mattext>
           </material>
           <response_lid ident="response1" rcardinality="Single">
             <render_choice>
