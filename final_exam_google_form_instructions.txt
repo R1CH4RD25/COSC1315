@@ -1,0 +1,664 @@
+================================================================================
+FINAL EXAM REVIEW: LESSONS 1-7
+Manual Google Forms Creation Guide
+================================================================================
+
+Total Questions: 50
+Format: Multiple Choice
+Points: 2 points per question (100 total)
+
+INSTRUCTIONS:
+1. Go to https://forms.google.com
+2. Create a new form titled: 'Final Exam Review: Lessons 1-7'
+3. Make it a Quiz (Settings → Quizzes → Make this a quiz)
+4. Set each question to 2 points
+5. Add all 50 questions below
+
+================================================================================
+
+
+================================================================================
+QUESTION 1 - Lesson 1: Your First Python Program
+================================================================================
+
+What is the purpose of the print() function in Python?
+
+  A. To format text with different fonts
+  B. To display output to the screen ✓ CORRECT
+  C. To save data to a file
+  D. To get input from the user
+
+
+================================================================================
+QUESTION 2 - Lesson 1: Your First Python Program
+================================================================================
+
+Which code will successfully print the text: It's Friday?
+
+  A. print(It's Friday)
+  B. print('It's Friday')
+  C. print("It's Friday") ✓ CORRECT
+  D. Print("It's Friday")
+
+
+================================================================================
+QUESTION 3 - Lesson 1: Your First Python Program
+================================================================================
+
+What symbol is used to create a comment in Python?
+
+  A. //
+  B. # ✓ CORRECT
+  C. /*
+  D. --
+
+
+================================================================================
+QUESTION 4 - Lesson 1: Your First Python Program
+================================================================================
+
+What error will occur when running this code: Print("Hello")?
+
+  A. SyntaxError due to missing quotes
+  B. NameError because Print is not defined ✓ CORRECT
+  C. IndentationError
+  D. No error, the code will run fine
+
+
+================================================================================
+QUESTION 5 - Lesson 1: Your First Python Program
+================================================================================
+
+What will be the output of this code: print("Python")?
+
+  A. "Python" (with quotes)
+  B. Python (without quotes) ✓ CORRECT
+  C. PYTHON
+  D. python
+
+
+================================================================================
+QUESTION 6 - Lesson 2: How Python Code Gets Executed
+================================================================================
+
+What is the Python interpreter?
+
+  A. A tool that converts Python code to English
+  B. A program that translates Python code into computer instructions and executes it ✓ CORRECT
+  C. A text editor for writing Python code
+  D. A debugging tool for finding errors
+
+
+================================================================================
+QUESTION 7 - Lesson 2: How Python Code Gets Executed
+================================================================================
+
+How does Python execute code in a program?
+
+  A. All at once, simultaneously
+  B. From bottom to top
+  C. Line by line from top to bottom ✓ CORRECT
+  D. Randomly
+
+
+================================================================================
+QUESTION 8 - Lesson 2: How Python Code Gets Executed
+================================================================================
+
+What will be the output of this code?
+print("Hello")
+print("World")
+
+  A. HelloWorld (on one line)
+  B. Hello World (on one line with space)
+  C. Hello on one line, World on the next line ✓ CORRECT
+  D. World on one line, Hello on the next line
+
+
+================================================================================
+QUESTION 9 - Lesson 2: How Python Code Gets Executed
+================================================================================
+
+What is ASCII art?
+
+  A. Professional digital artwork
+  B. Text-based art created using characters and symbols ✓ CORRECT
+  C. A type of Python function
+  D. A painting technique
+
+
+================================================================================
+QUESTION 10 - Lesson 3: Variables
+================================================================================
+
+What is a variable in Python?
+
+  A. A number that never changes
+  B. A container that stores a value with a name ✓ CORRECT
+  C. A type of function
+  D. A mathematical operation
+
+
+================================================================================
+QUESTION 11 - Lesson 3: Variables
+================================================================================
+
+Which data type represents a whole number without a decimal point?
+
+  A. Float
+  B. String
+  C. Integer ✓ CORRECT
+  D. Boolean
+
+
+================================================================================
+QUESTION 12 - Lesson 3: Variables
+================================================================================
+
+Which variable name follows Python naming conventions?
+
+  A. player name
+  B. 2player
+  C. player_name ✓ CORRECT
+  D. player-name
+
+
+================================================================================
+QUESTION 13 - Lesson 3: Variables
+================================================================================
+
+What will be printed by this code?
+x = 5
+x = 10
+print(x)
+
+  A. 5
+  B. 10 ✓ CORRECT
+  C. 5 10
+  D. Error
+
+
+================================================================================
+QUESTION 14 - Lesson 3: Variables
+================================================================================
+
+What data type is 3.14?
+
+  A. Integer
+  B. Float ✓ CORRECT
+  C. String
+  D. Boolean
+
+
+================================================================================
+QUESTION 15 - Lesson 3: Variables
+================================================================================
+
+Which code correctly creates a boolean variable?
+
+  A. is_new = true
+  B. is_new = "True"
+  C. is_new = True ✓ CORRECT
+  D. is_new = TRUE
+
+
+================================================================================
+QUESTION 16 - Lesson 4: Receiving Input
+================================================================================
+
+What does the input() function do?
+
+  A. Displays output to the screen
+  B. Prompts the user for input and returns what they type ✓ CORRECT
+  C. Performs mathematical calculations
+  D. Creates variables automatically
+
+
+================================================================================
+QUESTION 17 - Lesson 4: Receiving Input
+================================================================================
+
+What data type does input() always return?
+
+  A. Integer
+  B. Float
+  C. String ✓ CORRECT
+  D. Boolean
+
+
+================================================================================
+QUESTION 18 - Lesson 4: Receiving Input
+================================================================================
+
+What is string concatenation?
+
+  A. Converting strings to numbers
+  B. Joining strings together using the + operator ✓ CORRECT
+  C. Splitting strings apart
+  D. Comparing two strings
+
+
+================================================================================
+QUESTION 19 - Lesson 4: Receiving Input
+================================================================================
+
+What will be displayed if the user types "Sarah"?
+name = input("Name? ")
+print("Welcome " + name + "!")
+
+  A. Welcome Sarah
+  B. Welcome Sarah! ✓ CORRECT
+  C. WelcomeSarah!
+  D. Welcome name!
+
+
+================================================================================
+QUESTION 20 - Lesson 4: Receiving Input
+================================================================================
+
+Which code correctly stores user input in a variable?
+
+  A. input("Name? ") = name
+  B. name = input "Name? "
+  C. name = input("Name? ") ✓ CORRECT
+  D. name input("Name? ")
+
+
+================================================================================
+QUESTION 21 - Lesson 5: Type Conversion
+================================================================================
+
+What data type does the input() function ALWAYS return in Python?
+
+  A. Integer (whole number)
+  B. Float (decimal number)
+  C. String (text) ✓ CORRECT
+  D. Boolean (True/False)
+
+
+================================================================================
+QUESTION 22 - Lesson 5: Type Conversion
+================================================================================
+
+What does the int() function do?
+
+  A. Converts a value to a whole number ✓ CORRECT
+  B. Converts a value to a decimal number
+  C. Converts a value to text
+  D. Gets user input
+
+
+================================================================================
+QUESTION 23 - Lesson 5: Type Conversion
+================================================================================
+
+What will this code output?
+birth_year = input("Birth year: ")
+print(type(birth_year))
+
+  A. <class 'str'> ✓ CORRECT
+  B. <class 'int'>
+  C. <class 'float'>
+  D. Birth year:
+
+
+================================================================================
+QUESTION 24 - Lesson 5: Type Conversion
+================================================================================
+
+This code produces a TypeError. How do you fix it?
+birth_year = input("Birth year: ")
+age = 2024 - birth_year
+print(age)
+
+  A. Change line 2 to: age = 2024 - int(birth_year) ✓ CORRECT
+  B. Change line 2 to: age = "2024" - birth_year
+  C. Change line 3 to: print(str(age))
+  D. Add quotation marks: birth_year = "input"("Birth year: ")
+
+
+================================================================================
+QUESTION 25 - Lesson 5: Type Conversion
+================================================================================
+
+For a Fahrenheit to Celsius converter (formula: (F - 32) * 5/9), which type conversion should you use?
+
+  A. float() - because the result will have decimals ✓ CORRECT
+  B. int() - because temperature is always a whole number
+  C. str() - because temperature is text
+  D. No conversion needed
+
+
+================================================================================
+QUESTION 26 - Lesson 5: Type Conversion
+================================================================================
+
+What does int(3.7) return?
+
+  A. 3 (truncates the decimal) ✓ CORRECT
+  B. 4 (rounds up)
+  C. 3.0 (keeps one decimal)
+  D. "3.7" (converts to string)
+
+
+================================================================================
+QUESTION 27 - Lesson 5: Type Conversion
+================================================================================
+
+You can combine input() and conversion in one line. Which is correct?
+
+  A. age = int(input("Age: ")) ✓ CORRECT
+  B. age = input(int("Age: "))
+  C. age = input + int("Age: ")
+  D. age = "int(input("Age: "))"
+
+
+================================================================================
+QUESTION 28 - Lesson 5: Type Conversion
+================================================================================
+
+Can you do math operations (like addition or subtraction) between strings and numbers without converting them first?
+
+  A. Yes, Python automatically converts them
+  B. No, you'll get a TypeError ✓ CORRECT
+  C. Only with addition
+  D. Only with multiplication
+
+
+================================================================================
+QUESTION 29 - Lesson 6: Strings
+================================================================================
+
+What is a string in Python?
+
+  A. A sequence of characters enclosed in quotes ✓ CORRECT
+  B. A number with a decimal point
+  C. A variable that holds integers
+  D. A type of list
+
+
+================================================================================
+QUESTION 30 - Lesson 6: Strings
+================================================================================
+
+What does this code print?
+name = "python"
+print(name.upper())
+
+  A. PYTHON ✓ CORRECT
+  B. python
+  C. Python
+  D. pYTHON
+
+
+================================================================================
+QUESTION 31 - Lesson 6: Strings
+================================================================================
+
+What does this code print?
+team = "FOOTBALL"
+print(team[4:8])
+
+  A. BALL ✓ CORRECT
+  B. FOOT
+  C. OTBA
+  D. TBAL
+
+
+================================================================================
+QUESTION 32 - Lesson 6: Strings
+================================================================================
+
+What does this code print?
+word = "TOUCHDOWN"
+print(word[-3])
+
+  A. W ✓ CORRECT
+  B. O
+  C. D
+  D. N
+
+
+================================================================================
+QUESTION 33 - Lesson 6: Strings
+================================================================================
+
+What does it mean that strings are immutable?
+
+  A. Once created, strings cannot be changed; methods return new strings ✓ CORRECT
+  B. Strings can be modified at any time
+  C. Strings cannot be printed
+  D. Strings are stored permanently in memory
+
+
+================================================================================
+QUESTION 34 - Lesson 6: Strings
+================================================================================
+
+This code has an error. What's the correct way to capitalize the first letter of "john" to "John"?
+name = "john"
+name[0] = "J"  # Error!
+
+  A. name = "J" + name[1:] ✓ CORRECT
+  B. name[0] = name[0].upper()
+  C. name.replace(0, "J")
+  D. name.change(0, "J")
+
+
+================================================================================
+QUESTION 35 - Lesson 6: Strings
+================================================================================
+
+What does this code print?
+message = "Python Programming"
+print(message.find("Pro"))
+
+  A. 7 ✓ CORRECT
+  B. 6
+  C. Programming
+  D. -1
+
+
+================================================================================
+QUESTION 36 - Lesson 6: Strings
+================================================================================
+
+What is slicing in Python strings?
+
+  A. Extracting a portion of a string using [start:end] notation ✓ CORRECT
+  B. Dividing a string by a delimiter
+  C. Removing characters from a string
+  D. Converting a string to a list
+
+
+================================================================================
+QUESTION 37 - Lesson 7: Formatted Strings
+================================================================================
+
+What is a Formatted String (f-string)?
+
+  A. A string prefixed with f that allows embedding expressions inside curly braces ✓ CORRECT
+  B. A string that has been formatted with the format() method
+  C. A string that contains only numbers
+  D. A string that is aligned to the left or right
+
+
+================================================================================
+QUESTION 38 - Lesson 7: Formatted Strings
+================================================================================
+
+Which code correctly creates an f-string to display a player's name and jersey number?
+
+  A. message = f"Player {name} wears jersey #{number}" ✓ CORRECT
+  B. message = "Player {name} wears jersey #{number}"
+  C. message = f"Player " + name + " wears jersey #" + number
+  D. message = "Player $name wears jersey #$number"
+
+
+================================================================================
+QUESTION 39 - Lesson 7: Formatted Strings
+================================================================================
+
+What will this code output?
+name = "LEBRON"
+print(name.lower())
+
+  A. lebron ✓ CORRECT
+  B. LEBRON
+  C. Lebron
+  D. LeBron
+
+
+================================================================================
+QUESTION 40 - Lesson 7: Formatted Strings
+================================================================================
+
+What will this code output?
+title = "nba finals"
+print(title.title())
+
+  A. Nba Finals ✓ CORRECT
+  B. nba finals
+  C. NBA FINALS
+  D. NBA Finals
+
+
+================================================================================
+QUESTION 41 - Lesson 7: Formatted Strings
+================================================================================
+
+Which code correctly removes leading and trailing spaces from a team name?
+
+  A. team = "  Warriors  "; clean_team = team.strip() ✓ CORRECT
+  B. team = "  Warriors  "; clean_team = team.trim()
+  C. team = "  Warriors  "; clean_team = team.remove_spaces()
+  D. team = "  Warriors  "; clean_team = team.clean()
+
+
+================================================================================
+QUESTION 42 - Lesson 7: Formatted Strings
+================================================================================
+
+What is wrong with this code?
+player = "Durant"
+position = "Forward"
+print("Player {player} plays {position}")
+
+  A. Missing the f prefix before the string ✓ CORRECT
+  B. Variables should use $ instead of {}
+  C. The print statement is incorrect
+  D. The code is correct as written
+
+
+================================================================================
+QUESTION 43 - Lesson 7: Formatted Strings
+================================================================================
+
+What will this code output?
+text = "basketball"
+result = text.find("ball")
+print(result)
+
+  A. 6 ✓ CORRECT
+  B. 4
+  C. True
+  D. -1
+
+
+================================================================================
+QUESTION 44 - Lesson 7: Formatted Strings
+================================================================================
+
+Which code correctly replaces "win" with "victory" in the message?
+
+  A. message = "Team will win"; new_message = message.replace("win", "victory") ✓ CORRECT
+  B. message = "Team will win"; message.replace("win", "victory")
+  C. message = "Team will win"; new_message = message.swap("win", "victory")
+  D. message = "Team will win"; message = replace(message, "win", "victory")
+
+
+================================================================================
+QUESTION 45 - Lesson 7: Formatted Strings
+================================================================================
+
+What happens when you call a string method like .upper() on a string?
+
+  A. It returns a new string; the original string is unchanged ✓ CORRECT
+  B. It modifies the original string permanently
+  C. It only works if you assign it back to the same variable
+  D. It creates an error because strings cannot be modified
+
+
+================================================================================
+QUESTION 46 - Lesson 7: Formatted Strings
+================================================================================
+
+What is the main advantage of f-strings over string concatenation?
+
+  A. Code is more readable and easier to visualize the output ✓ CORRECT
+  B. F-strings are faster to execute
+  C. F-strings can include variables, concatenation cannot
+  D. F-strings automatically convert numbers to strings
+
+
+================================================================================
+QUESTION 47 - Comprehensive Review
+================================================================================
+
+What is the correct complete code to get a user's age and calculate birth year?
+age = ?
+birth_year = 2024 - age
+print(birth_year)
+
+  A. age = input("Age: ")
+  B. age = int(input("Age: ")) ✓ CORRECT
+  C. age = "20"
+  D. age = float(input("Age: "))
+
+
+================================================================================
+QUESTION 48 - Comprehensive Review
+================================================================================
+
+What will this code display?
+name = "  john  "
+clean = name.strip().title()
+print("Hello " + clean)
+
+  A. Hello   john  
+  B. Hello John ✓ CORRECT
+  C. Hello john
+  D. Hello JOHN
+
+
+================================================================================
+QUESTION 49 - Comprehensive Review
+================================================================================
+
+Which line of code will cause an error?
+
+  A. price = 19.99
+  B. name = "Python"
+  C. is_valid = True
+  D. age = 25 + "5" ✓ CORRECT
+
+
+================================================================================
+QUESTION 50 - Comprehensive Review
+================================================================================
+
+Which is the BEST way to display "Score: 95" where score is a variable?
+
+  A. print("Score: " + score)
+  B. print(f"Score: {score}") ✓ CORRECT
+  C. print("Score: ", score)
+  D. print("Score: " + str(score))
+
+================================================================================
+
+DONE! Add all questions to your Google Form.
+Remember to:
+  - Set each question to 2 points
+  - Mark the correct answer for each question
+  - Set as 'Required' for all questions
+================================================================================
