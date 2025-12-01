@@ -18,7 +18,7 @@ def create_final_exam_xml():
       </qtimetadatafield>
       <qtimetadatafield>
         <fieldlabel>cc_weighting</fieldlabel>
-        <fieldentry>assignment</fieldentry>
+        <fieldentry>not_weighted</fieldentry>
       </qtimetadatafield>
       <qtimetadatafield>
         <fieldlabel>qmd_timelimit</fieldlabel>
